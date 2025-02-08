@@ -1,1 +1,39 @@
-// @use './component/theVariable' as *;
+@use '../../theVariable' as *;
+
+.jsx_banner_heading {
+    font-size: $primary-heading;
+    width: 70%;
+}
+
+.jsx_banner_searchbar_container {
+    display: flex;
+    // background-color: #FFFFFF;
+}
+
+.jsx_banner_searchbar_container input {
+    background-color: $background-color;
+    border: none;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+.jsx_banner_searchbar_container img {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.jsx_companyname_container {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    background-color: $background-glass-color-secondary;
+    border: none;
+    border-radius: 2px;
+}
+
+.jsx_companyname_container img {
+    height: 1.8rem;
+    width: 1.8rem;
+}

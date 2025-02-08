@@ -4,14 +4,12 @@ import './articlesection.scss';
 function ArticleSection() {
     return (
         <>
-            <div className="js_main_container">
+            <div className="jsx_main_container">
 
 
                 <div className="js_article_main_container">
                     <div className="js_article_img_container">
-                        <img src='/img/tesla_article.png' alt='article_img' />
-
-                        
+                        <img src='/img/tesla_article.png' alt='article_img' />   
                     </div>
 
                     <div className="js_article_sidebar_top">
