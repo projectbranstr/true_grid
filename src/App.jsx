@@ -5,7 +5,9 @@ import Home from './pages/Home';
 import Layout from './Layout';
 import Article from './pages/Article';
 import Company from './pages/Company';
-
+// import '@mantine/core/lib/styles/index.css'; 
+// import '@mantine/core/styles.css'
+// import '@mantine/core/styles.layer.css'
 function App() {
   const [count, setCount] = useState(0)
 

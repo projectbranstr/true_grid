@@ -11,8 +11,39 @@ $font-color: white;
 $paragraph-color: #e7e9eb;
 $card-heading-font-size: 1.8rem; // 18px
 $card-para-font-size: 1.6rem; // 16px
-$card-date-font-size: 1.2rem; // 12px
+$card-date-font-size: 1.4rem; // 12px
 $background-color: #020D1B;
 $card-border-radius: 1rem; // 10px
-$tab-title-font-size: 3rem;
-$max-width: 126.6rem;
+$tab-title-font-size: 3rem; // 30px
+$max-width: 126.6rem; // 1200px
+
+.js_main_container{
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.js_section_secondary_heading{
+    font-size: $secondary-heading;
+    font-family: $primary-font-family;
+    font-weight: 700;
+    color: $font-color;
+    padding-bottom: 3rem;
+    // margin-bottom: 2rem;
+}
+.js_section_paragraph{
+    
+    font-size: $para-graph-font-size;
+    padding: 1rem 0;
+    line-height: 2.4rem;
+    color: $paragraph-color;
+    // margin-bottom: 2rem;
+}
+.js_section_spacing {
+    margin: 10rem 0;
+}
+@media all and (max-width: 126.6rem){
+    .js_main_container{
+        padding: 0 3%;
+    }
+    
+}
