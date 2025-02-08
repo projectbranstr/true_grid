@@ -10,7 +10,7 @@ function Article() {
         <div>
             {/* <Analyse /> */}
             <SankeyDiagram />
-            <AnalyseSection />
+            {/* <AnalyseSection /> */}
             <DiscoverCard data={discoverMore}/>
             <CompanyOverview data={companyOverview}/>
             <Card data={popularBlogs}/>

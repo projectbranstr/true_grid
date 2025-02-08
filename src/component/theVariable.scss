@@ -38,6 +38,9 @@ $max-width: 126.6rem; // 1200px
     color: $paragraph-color;
     // margin-bottom: 2rem;
 }
+.js_section_spacing {
+    margin: 10rem 0;
+}
 @media all and (max-width: 126.6rem){
     .js_main_container{
         padding: 0 3%;

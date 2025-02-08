@@ -172,3 +172,29 @@ export const discoverMore = {
     ]
 
 }
+
+export const companies = [
+    { id: '1', name: 'Tech Corp' },
+    { id: '2', name: 'Health Solutions' },
+    { id: '3', name: 'Eco Innovations' },
+  ];
+  
+  // Dummy data for departments
+  export const departments = [
+    { id: '1', name: 'Development', company: { id: '1', name: 'Tech Corp' } },
+    { id: '2', name: 'Marketing', company: { id: '1', name: 'Tech Corp' } },
+    { id: '3', name: 'R&D', company: { id: '2', name: 'Health Solutions' } },
+    { id: '4', name: 'Sales', company: { id: '3', name: 'Eco Innovations' } },
+  ];
+  
+  // Dummy data for employees
+  export const employees = [
+    { id: '1', firstName: 'John', lastName: 'Doe', birthDate: '1990-02-01', department: { id: '1', name: 'Development' } },
+    { id: '2', firstName: 'Jane', lastName: 'Smith', birthDate: '1985-08-15', department: { id: '2', name: 'Marketing' } },
+    { id: '3', firstName: 'Tom', lastName: 'Brown', birthDate: '1992-05-22', department: { id: '3', name: 'R&D' } },
+    { id: '4', firstName: 'Lucy', lastName: 'Green', birthDate: '1988-12-09', department: { id: '4', name: 'Sales' } },
+    { id: '5', firstName: 'Alice', lastName: 'Johnson', birthDate: '1980-03-10', department: { id: '1', name: 'Development' } },
+    { id: '6', firstName: 'Bob', lastName: 'White', birthDate: '1993-07-20', department: { id: '2', name: 'Marketing' } },
+    { id: '7', firstName: 'Charlie', lastName: 'Black', birthDate: '1987-11-30', department: { id: '3', name: 'R&D' } },
+    { id: '8', firstName: 'David', lastName: 'Blue', birthDate: '1995-06-18', department: { id: '4', name: 'Sales' } },
+  ];

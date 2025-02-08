@@ -2,7 +2,9 @@ import React from 'react'
 import './card.scss';
 const Card = ({ data }) => {
   return (
-    <div className="js_main_container">
+    <div className="
+    js_section_spacing">
+    <div className="js_main_container ">
 
        {data?.title && <h1 className="js_section_secondary_heading">{data.title}</h1>} 
         {data.heading && <h1>{data.title}</h1>}
@@ -24,6 +26,7 @@ const Card = ({ data }) => {
             </div>
           ))}
         </div>
+      </div>
       </div>
   )
 }

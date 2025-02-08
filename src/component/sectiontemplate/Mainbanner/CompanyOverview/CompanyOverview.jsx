@@ -4,7 +4,7 @@ import './CompanyOverview.scss';
 const CompanyOverview = ({ data }) => {
     return (
         <div className="js_main_container">
-            <div  className='js_company_overview'>
+            <div  className='js_company_overview js_section_spacing'>
 
 
             
@@ -24,7 +24,7 @@ const CompanyOverview = ({ data }) => {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
 </div>
     );
 }

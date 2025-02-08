@@ -2,6 +2,7 @@ import React from 'react'
 import './discovercard.scss';
 const DiscoverCard = ({ data }) => {
   return (
+    <div className="js_section_spacing">
     <div className="js_main_container">
 
       {data?.title && <h1 className="js_section_secondary_heading">{data.title}</h1>}
@@ -21,7 +22,7 @@ const DiscoverCard = ({ data }) => {
           </div>
         ))}
       </div>
-    </div>
+    </div></div>
   )
 }
 

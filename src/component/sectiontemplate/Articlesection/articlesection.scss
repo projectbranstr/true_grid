@@ -1,0 +1,131 @@
+@use '../../theVariable.scss' as *;
+
+
+.js_main_container {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.js_article_main_container {
+    padding-top: 2rem;
+    // background-color: $;
+}
+
+.js_search_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.js_search_container input {
+    background-color: $background-color;
+    border: none;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+.js_search_container img {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.js_search_container input:focus {
+    border: none;
+    color: $font-color;
+    outline: none;
+}
+
+.js_article_sidebar_top {
+    width: clamp(20rem, 30vw, 35rem);
+}
+
+.js_sidebar_heading {
+    display: flex;
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    gap: 2rem;
+    padding: 1rem 0rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+}
+
+.js_sidebar_heading_active {
+    font-weight: 600;
+}
+
+.js_article_container_cards {
+    display: flex;
+    background-color: #87B6F124;
+    height: 8rem;
+    border-radius: 2px;
+
+}
+
+.js_article_container_cards img {
+    width: 15rem;
+    object-fit: cover;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.js_article_container_cards div {
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .5rem;
+
+
+}
+
+.js_article_title :nth-child(1) {
+    font-size: $card-date-font-size;
+}
+
+.js_article_title :nth-child(2) {
+    font-size: 1.4rem;
+}
+
+
+
+
+// acordian
+
+.js_container_article_data {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+    background: #455F7C;
+
+}
+
+.js_articledata_left_container {
+    // width: clamp(600px, 30vw, 900px);
+    width: 900px;
+}
+
+.js_accordian_title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.js_accordian_title h6 {
+    font-size: $tertiary-heading;
+}
+
+.js_accordian_title div {
+    font-size: 20px;
+    border: 1px solid white;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.js_accordian_subtitle {
+    font-size: $card-heading-font-size;
+}
