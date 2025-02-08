@@ -96,13 +96,28 @@
     display: flex;
     margin-top: 2rem;
     gap: 2rem;
-    background: #455F7C;
+
 
 }
 
 .js_articledata_left_container {
     // width: clamp(600px, 30vw, 900px);
-    width: 900px;
+    width: 100%;
+}
+
+.js_accordian_container {
+    background: #041730;
+    padding: 1rem 2rem;
+
+    border-radius: 5px;
+
+}
+
+.js_accordian_container {
+    background: #041730;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
 }
 
 .js_accordian_title {
@@ -113,6 +128,7 @@
 
 .js_accordian_title h6 {
     font-size: $tertiary-heading;
+    padding: 1rem 0;
 }
 
 .js_accordian_title div {
@@ -124,8 +140,49 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    padding-bottom: 1rem;
 }
 
-.js_accordian_subtitle {
+.js_accordian_subtitle p {
     font-size: $card-heading-font-size;
+    padding-bottom: 1rem;
+}
+
+// table 
+
+.js_accordian_article {
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.js_accordian_article tr {
+    font-size: 23px;
+    border: 1px solid white;
+    border: none;
+
+}
+
+.js_accordian_article tr th {
+    font-weight: 600;
+    background-color: #455F7C;
+    border: none;
+}
+
+.js_accordian_article td {
+    border: none;
+
+}
+
+
+
+// accordian right part 
+
+.js_articledata_right_container div:nth-child(1) {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.js_articledata_right_container div:nth-child(2) {
+    font-size: 23px;
 }

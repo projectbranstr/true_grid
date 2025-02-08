@@ -1,7 +1,8 @@
 import React from 'react'
 import { Outlet } from "react-router-dom";
 import Header from './component/molecule/Header/Header.jsx';
-
+import Footer from './component/molecule/Footer/Footer.jsx';
+ 
 function Layout() {
     return (
         <>
@@ -9,7 +10,7 @@ function Layout() {
             <main>
                 <Outlet />
             </main>
-            <footer>My Footer</footer>
+            <Footer/>
         </>
     )
 }
