@@ -1,0 +1,60 @@
+@use "../../theVariable.scss" as *;
+
+.js_card_size {
+    width: 100%;
+    height: 24.1rem;
+}
+
+.js_discover_card_container {
+    
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.js_discover_card_container>div {
+    padding:2.8rem 2.4rem;
+    background-color: $background-glass-color-primary;
+    border-radius:$card-border-radius $card-border-radius;
+    flex: 0 1 calc(33.333% - 2rem);
+    // margin: rem;
+}
+
+
+.js_discover_bg_img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:$card-border-radius $card-border-radius 0 0;
+
+}
+
+.js_card_tag {
+    font-size: $card-date-font-size;
+ 
+}
+.js_discover_card_body{
+    padding-top:0.8rem;
+
+}
+.js_discover_card_title {
+    font-size: 2.4rem;
+    font-family: $primary-font-family;
+    color: $font-color;
+    padding: 0.8rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.js_discover_card_content {
+    padding-bottom: 0.8rem;
+    line-height: 2.2rem;
+    font-size:1.8rem;
+    font-family: $tertiary-font-family;
+    color: $paragraph-color;
+}
