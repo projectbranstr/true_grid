@@ -8,8 +8,10 @@ function ArticleSection() {
 
 
                 <div className="js_article_main_container">
-                    <div className="">
+                    <div className="js_article_img_container">
                         <img src='/img/tesla_article.png' alt='article_img' />
+
+                        
                     </div>
 
                     <div className="js_article_sidebar_top">
@@ -40,31 +42,33 @@ function ArticleSection() {
 
                     <div className="js_articledata_left_container">
 
-                        <div className="js_accordian_container">
-                            {/* accordian header  */}
-                            <div className="js_accordian_title">
-                                <h6>Global Nuclear Energy Generation by Region in 2023</h6>
-                                <div>-</div>
-                            </div>
-                            {/* acordian content  */}
-                            <div className="js_accordian_subtitle">
-                                <p>In 2023, global energy consumption reached 17,200 TWh. This incredible demand underlines the importance of exploring clean and sustainable energy solutions, like nuclear energy, particularly for developed economies. </p>
+                        <div className="js_article_left_inner">
 
-                                <p>For this graphic, the first in the three-part Fueling the Future series, Visual Capitalist partnered with Global X ETFs to explore nuclear energy generation further, determine which regions generated the most nuclear energy in 2023, and investigate why nuclear is critical to the clean energy transition. </p>
+                            <div className="js_accordian_container">
+                                {/* accordian header  */}
+                                <div className="js_accordian_title">
+                                    <h6>Global Nuclear Energy Generation by Region in 2023</h6>
+                                    <div>-</div>
+                                </div>
+                                {/* acordian content  */}
+                                <div className="js_accordian_subtitle">
+                                    <p>In 2023, global energy consumption reached 17,200 TWh. This incredible demand underlines the importance of exploring clean and sustainable energy solutions, like nuclear energy, particularly for developed economies. </p>
+
+                                    <p>For this graphic, the first in the three-part Fueling the Future series, Visual Capitalist partnered with Global X ETFs to explore nuclear energy generation further, determine which regions generated the most nuclear energy in 2023, and investigate why nuclear is critical to the clean energy transition. </p>
 
 
-                            </div>
-                            <div className="js_accordian_title">
-                                <h6>Global Nuclear Energy Generation by Region in 2023</h6>
-                            </div>
-                            <div className="js_accordian_subtitle">
-                                <p>In 2023, global energy consumption reached 17,200 TWh. This incredible demand underlines the importance of exploring clean and sustainable energy solutions, like nuclear energy, particularly for developed economies. </p>
+                                </div>
+                                <div className="js_accordian_title">
+                                    <h6>Global Nuclear Energy Generation by Region in 2023</h6>
+                                </div>
+                                <div className="js_accordian_subtitle">
+                                    <p>In 2023, global energy consumption reached 17,200 TWh. This incredible demand underlines the importance of exploring clean and sustainable energy solutions, like nuclear energy, particularly for developed economies. </p>
 
-                                <p>For this graphic, the first in the three-part Fueling the Future series, Visual Capitalist partnered with Global X ETFs to explore nuclear energy generation further, determine which regions generated the most nuclear energy in 2023, and investigate why nuclear is critical to the clean energy transition. </p>
+                                    <p>For this graphic, the first in the three-part Fueling the Future series, Visual Capitalist partnered with Global X ETFs to explore nuclear energy generation further, determine which regions generated the most nuclear energy in 2023, and investigate why nuclear is critical to the clean energy transition. </p>
 
-                            </div>
+                                </div>
 
-                            {/* <table className='js_accordian_article'>
+                                {/* <table className='js_accordian_article'>
                             <tr>
                                 <th>Region</th>
                                 <th>Nuclear Energy Generation</th>
@@ -83,6 +87,7 @@ function ArticleSection() {
                             </tr>
                         </table> */}
 
+                            </div>
                         </div>
 
                         <div className="js_accordian_container">
@@ -92,7 +97,7 @@ function ArticleSection() {
                                 <h6>Global Nuclear Energy Generation by Region in 2023</h6>
                                 <div>+</div>
                             </div>
-                            
+
                         </div>
 
                     </div>
