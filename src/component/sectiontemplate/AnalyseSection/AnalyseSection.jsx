@@ -1,34 +1,97 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './analysesection.scss'
+import SankeyDiagram from '../../molecule/SankeyDiagram/SankeyDiagram';
+import StockChart from '../StockChart/StockChart';
 
-const AnalyseSection = () => {
-    const [activeTab, setActiveTab] = useState(0);
+const  AnalyseSection = () =>{
+    // Data for tabs and their content
+    const data = {
+        tabs: [
+            { id: '1', label: 'Revenue & Expenses Breakdown', content: <SankeyDiagram />},
+            { id: 'Tab 2', label: 'Financial Statement', content: 'Content for Tab 2' },
+            { id: 'Tab 3', label: 'Fundamental Analysis', content: <StockChart /> },
+        ],
+        qtyOptions: ['10', '20', '30'],
+        dateOptions: ['2025-02-08', '2025-02-09', '2025-02-10']
+    }
 
-    // Tab names and their content
-    const tabs = [
-      { name: 'Tab 1', content: 'Content for Tab 1' },
-      { name: 'Tab 2', content: 'Content for Tab 2' },
-      { name: 'Tab 3', content: 'Content for Tab 3' },
-    ];
+    const [activeTab, setActiveTab] = useState(data.tabs[0].id); // Initial tab is the first one
+    const [qty, setQty] = useState(''); // State for 'Qty' dropdown
+    const [date, setDate] = useState(''); // State for 'Date' dropdown
+
+    // Handle Tab Change
+    const handleTabClick = (tabId) => {
+        setActiveTab(tabId);
+    }
+
+    // Handle 'Qty' change
+    const handleQtyChange = (e) => {
+        setQty(e.target.value);
+    }
+
+    // Handle 'Date' change
+    const handleDateChange = (e) => {
+        setDate(e.target.value);
+    }
+
+    // Get content for the active tab
+    const renderTabContent = () => {
+        const activeTabData = data.tabs.find(tab => tab.id === activeTab);
+        return <div>{activeTabData ? activeTabData.content : 'No content available'}</div>;
+    }
+
     return (
-        <div className='js_analyse_container'>
-            <div className='js_main_container'>
-                <h1 className='js_section_secondary_heading'>Analyse and Expense</h1>
-                {/* <div className='js_analyse_tab_container'>
-                    <div className="analyse_tabs">
-                        {tabs.map((tab, index) => (
-                            <button
-                                key={index}
-                                className={`analyse-tab-button ${activeTab === index ? 'active' : ''}`}
-                                onClick={() => setActiveTab(index)}
+        <div className='js_analyse_main_container js_section_spacing'>
+            <div className="js_main_container">
+                <h1 className="js_section_secondary_heading">Analyse and Expense</h1>
+
+                <div className="js_analyse_tab_container">
+                    <div className="js_analyse_tab">
+                        <div className="js_analyse_tabs">
+                            {data.tabs.map(tab => (
+                                <button
+                                    key={tab.id}
+                                    className={`js_analyse_tab_button ${activeTab === tab.id ? 'js_analyse_tab_active' : ''}`}
+                                    onClick={() => handleTabClick(tab.id)}
+                                >
+                                    {tab.label}
+                                </button>
+                            ))}
+                        </div>
+
+                        <div className="js_analyse_dropdowns">
+                            <select
+                                className="js_analyse_tab_select"
+                                value={qty}
+                                onChange={handleQtyChange}
                             >
-                                {tab.name}
-                            </button>
-                        ))}
+                                <option value="">Qty</option>
+                                {data.qtyOptions.map((qtyOption, index) => (
+                                    <option key={index} value={qtyOption}>
+                                        {qtyOption}
+                                    </option>
+                                ))}
+                            </select>
+
+                            <select
+                                className="js_analyse_tab_select"
+                                value={date}
+                                onChange={handleDateChange}
+                            >
+                                <option value="">Date</option>
+                                {data.dateOptions.map((dateOption, index) => (
+                                    <option key={index} value={dateOption}>
+                                        {dateOption}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
                     </div>
-                    <div className="analyse-tab-content">
-                        <p>{tabs[activeTab].content}</p>
+
+                    <div className="js_analyse_tab_content">
+                        {renderTabContent()}
                     </div>
-                </div> */}
+                </div>
             </div>
         </div>
     )
