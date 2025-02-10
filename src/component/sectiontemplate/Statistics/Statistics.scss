@@ -1,0 +1,6 @@
+@use '../../theVariable.scss' as *;
+
+.jsx_stat_main_container {
+    max-width: $max-width;
+    margin: 0 auto;
+}

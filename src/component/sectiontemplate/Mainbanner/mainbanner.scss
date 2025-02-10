@@ -1,25 +1,57 @@
 @use '../../theVariable' as *;
 
+.jsx_banner_primary_container {
+    background-image: url(/img/bnner_bg.png);
+    width: 100%;
+    background-size: cover;
+}
+
+.jsx_bannermain_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 95vh;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
 .jsx_banner_heading {
     font-size: $primary-heading;
     width: 70%;
+    text-align: center;
 }
 
 .jsx_banner_searchbar_container {
     display: flex;
-    // background-color: #FFFFFF;
+    align-items: center;
+    padding: 0 1rem;
+    width: 55%;
+    background-color: $background-glass-color-secondary;
+    border-radius: 2px;
 }
 
 .jsx_banner_searchbar_container input {
-    background-color: $background-color;
+    color: $font-color;
+    background-color: $background-glass-color-secondary;
     border: none;
     padding: 1rem 1rem;
     width: 100%;
 }
 
+.jsx_banner_searchbar_container input::placeholder {
+    color: $font-color;
+    font-size: 1.4rem;
+}
+
+.jsx_banner_searchbar_container input:focus {
+    outline: none;
+}
+
 .jsx_banner_searchbar_container img {
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 1.3rem;
+    width: 1.3rem;
 }
 
 .jsx_companyname_container {
@@ -36,4 +68,9 @@
 .jsx_companyname_container img {
     height: 1.8rem;
     width: 1.8rem;
+}
+
+.jsx_companyname_maincontainer {
+    display: flex;
+    gap: 1rem;
 }

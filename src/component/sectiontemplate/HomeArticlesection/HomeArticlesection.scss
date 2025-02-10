@@ -1,0 +1,46 @@
+@use '../../theVariable.scss' as *;
+
+.jsx_articlesection_container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.jsx_article_primarycard {
+    padding: 2rem 0;
+    max-width: 90rem;
+}
+
+.jsx_article_primarycard>img {
+    width: 100%;
+}
+
+.jsx_article_primarycard>div {
+    background-color: $background-glass-color-primary;
+    padding: 2rem;
+}
+.jsx_card_header{
+    
+}
+.jsx_card_header>div {
+    font-size: 1.4rem;
+
+}
+
+.jsx_card_header>h6 {
+    font-size: 2.5rem;
+}
+
+.jsx_card_header>p {
+    font-size: 1.6rem;
+}
+
+.jsx_card_content {
+    // display: grid;
+    // grid-template-columns: auto auto;
+}
+
+.jsx_card_content:nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
