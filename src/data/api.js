@@ -199,3 +199,32 @@ export const companies = [
     { id: '7', firstName: 'Charlie', lastName: 'Black', birthDate: '1987-11-30', department: { id: '3', name: 'R&D' } },
     { id: '8', firstName: 'David', lastName: 'Blue', birthDate: '1995-06-18', department: { id: '4', name: 'Sales' } },
   ];
+
+  export const storyCard = {
+    title: "Top Story",
+    data: [
+        {
+            img: "/img/story1.png",
+            tag: "Technology",
+            date: "2025-02-07",
+            title: "Charted:Average Workers per U.S Startup (1994-2023)",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+        },
+        {
+            img: "/img/story2.png",
+
+            tag: "Health",
+            date: "2025-01-15",
+            title: "Healthy Living Tips",
+            des: "Tips and tricks for maintaining a healthy lifestyle.",
+        },
+        {
+            img: "/img/story3.png",
+
+            tag: "Travel",
+            date: "2024-12-20",
+            title: "Top Travel Destinations",
+            des: "A guide to the top travel destinations for 2025.",
+        }, 
+       
+    ]}

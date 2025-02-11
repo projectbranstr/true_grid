@@ -1,7 +1,7 @@
 import React from 'react'
 import './card.scss';
 
-const Card = ({ data }) => {
+const Card = ({ data  , varient}) => {
   return (
     <div className="
     js_section_spacing">
@@ -13,7 +13,7 @@ const Card = ({ data }) => {
           {data?.data.map((item, index) => (
             <div key={index}>
               <div className='js_card_header'>
-                <div className='js_bg_img js_card_size' style={{ backgroundImage: `url(${item.img})` }}></div>
+                <div className={`js_bg_img js_card_size ${varient && "js_card_height"}`} style={{ backgroundImage: `url(${item.img})` }}></div>
               </div>
               <div className="js_card_body">
                 <div className="js_card_tag"><b>{item.tag}</b>&nbsp; / &nbsp;{item.date}</div>

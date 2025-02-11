@@ -13,8 +13,8 @@ function Home() {
             <Mainbanner />
             {/* <Statistics title="Trending Statistics" /> */}
             <HomeArticlesection />
-            {/* <Card data={popularBlogs} /> */}
             <Testimonial />
+            <Card data={popularBlogs} />
         </>
     )
 }
