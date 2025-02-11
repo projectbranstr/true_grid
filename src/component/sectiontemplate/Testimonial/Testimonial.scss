@@ -1,0 +1,32 @@
+@use '../../theVariable' as *;
+
+.jsx_primary_container {
+    display: flex;
+    justify-content: center;
+    background: url(/img/footer_grid_bg.png);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 20rem 0;
+}
+
+.jsx_testimonial-container {
+    max-width: $max-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jsx_test_img_container img {
+    width: 10rem;
+}
+
+.jsx_author_container {
+    font-size: 2rem;
+}
+
+.jsx_quote_container {
+    font-size: 2.8rem;
+    text-align: center;
+}

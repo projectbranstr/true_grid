@@ -1,0 +1,6 @@
+@use '../../theVariable.scss' as *;
+
+.jsx_primary_heading {
+    font-size: $secondary-heading;
+    font-weight: 600;
+}

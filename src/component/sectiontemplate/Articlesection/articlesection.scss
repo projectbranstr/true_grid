@@ -1,7 +1,7 @@
 @use '../../theVariable.scss' as *;
 
 
-.js_main_container {
+.jsx_main_container {
     max-width: $max-width;
     margin: 0 auto;
 }
@@ -9,6 +9,15 @@
 .js_article_main_container {
     padding-top: 2rem;
     // background-color: $;
+}
+
+.js_article_img_container {
+    // width: clamp(600px, 71.5vw, 900px)
+    max-width: 900px;
+}
+
+.js_article_img_container img {
+    width: 100%
 }
 
 .js_search_container {
@@ -101,8 +110,13 @@
 }
 
 .js_articledata_left_container {
-    // width: clamp(600px, 30vw, 900px);
+    // width: clamp(600px, 71.5vw, 900px)
+    max-width: 900px;
+}
+
+.js_article_left_inner {
     width: 100%;
+
 }
 
 .js_accordian_container {

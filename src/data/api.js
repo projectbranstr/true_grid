@@ -21,7 +21,8 @@ export const popularBlogs = {
             date: "2024-12-20",
             title: "Top Travel Destinations",
             des: "A guide to the top travel destinations for 2025.",
-        }, {
+        }, 
+        {
             img: "/blog2.png",
             tag: "Health",
             date: "2025-01-15",
