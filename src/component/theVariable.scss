@@ -20,6 +20,7 @@ $max-width: 126.6rem; // 1200px
 .js_main_container{
   max-width: $max-width;
   margin: 0 auto;
+  padding: 0;
 }
 
 .js_section_secondary_heading{
@@ -44,6 +45,12 @@ $max-width: 126.6rem; // 1200px
 @media all and (max-width: 126.6rem){
     .js_main_container{
         padding: 0 3%;
+    }
+    
+}
+@media all and (min-width: 126.6rem){
+    .js_main_container{
+        padding: 0;
     }
     
 }

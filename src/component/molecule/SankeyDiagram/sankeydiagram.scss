@@ -8,7 +8,12 @@ $color-bg-d: #2D2C35;
 $color-text: $color-bg-d;
 $color-accent: #040AFA;
 
-
+.highcharts-figure{
+display: flex;
+margin-top: 5rem;
+align-items: center;
+justify-content: center;
+}
 
 h2 {
   font-family: $font-header;
