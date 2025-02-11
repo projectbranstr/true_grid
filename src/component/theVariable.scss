@@ -1,3 +1,4 @@
+
 $primary-heading: 7.4rem; // 74px
 $secondary-heading: 4.5rem; // 45px
 $tertiary-heading: 3rem; // 30px
@@ -22,7 +23,6 @@ $max-width: 126.6rem; // 1200px
   margin: 0 auto;
   padding: 0;
 }
-
 .js_section_secondary_heading{
     font-size: $secondary-heading;
     font-family: $primary-font-family;
@@ -44,13 +44,9 @@ $max-width: 126.6rem; // 1200px
 }
 @media all and (max-width: 126.6rem){
     .js_main_container{
-        padding: 0 3%;
+        padding: 0 3%; 
+        box-sizing: content-box;
     }
     
 }
-@media all and (min-width: 126.6rem){
-    .js_main_container{
-        padding: 0;
-    }
-    
-}
+

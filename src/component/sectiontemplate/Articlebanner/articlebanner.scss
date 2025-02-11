@@ -5,7 +5,12 @@
     display: flex;
     justify-content: space-between;
 }
-
+.js_article_main_container >div:nth-child(1) {
+  width: 69%; 
+}
+.js_article_main_container >div:nth-child(2) {
+    width: 29%; 
+ }
 .js_article_main_container {
     max-width: $max-width;
     margin: 0 auto;
@@ -27,7 +32,7 @@
     gap: 1rem;
     background-color: $background-glass-color-secondary;
     border-radius: 2.42px;
-
+    width: 100%;
     .js_banner_second_companyname h6 {
         font-size: 2rem;
         text-align: left;

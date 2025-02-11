@@ -2,6 +2,8 @@ import React from 'react'
 import './articlebanner.scss'
 
 function Articlebanner() {
+
+    
     return (
         <>
             <div className='js_article_main_container'>
