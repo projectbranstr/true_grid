@@ -169,7 +169,8 @@ function Home() {
             <HomeArticlesection />
             <Card data={popularBlogs} />
             <Testimonial />
-            <Card data={storyCard} varient/>
+            <Card data={storyCard} varient />
+            <Footer />
             {/* <TreeTable items={data}/> */}
         </>
     )

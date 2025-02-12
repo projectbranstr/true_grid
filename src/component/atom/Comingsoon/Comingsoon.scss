@@ -1,25 +1,12 @@
-// :root {
-//     --primary-color: #c8dc71;
-//     --gradient-color: linear-gradient(180deg, #d2ff00 0%, #00d2ff 100%);
-// }
-
-// * {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-// }
-
-// body {
-//     font-family: "Space Grotesk", sans-serif;
-//     background-color: #16181b;
-// }
-
 .jsx_container {
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 15vh;
+    // height: 30vh;
     font-family: "Space Grotesk", sans-serif;
+    gap: 2rem;
 }
 
 /* Custom */
@@ -40,40 +27,36 @@
     position: relative;
 }
 
-.line_type_animation >* {
+.line_type_animation>* {
 
 
-     &:nth-child(1){
-         animation: type 1.5s steps(90) 4.5s 1 normal both, cursor 1s step-end infinite;
-         border-right: 1px solid;
-     }
+    &:nth-child(1) {
+        animation: type 1.5s steps(90) 4.5s 1 normal both, cursor 1s step-end infinite;
+        border-right: 1px solid;
+    }
 
-     &:nth-child(2){
+    &:nth-child(2) {
         animation: type 1.5s steps(90) 5.5s 1 normal both, cursor 1s step-end infinite;
         border-right: 1px solid;
-        
+
     }
-    &:nth-child(3){
+
+    &:nth-child(3) {
         animation: type 1.5s steps(90) 6.5s 1 normal both, cursor 1s step-end infinite;
     }
-    &:nth-child(4){
+
+    &:nth-child(4) {
         animation: type 1.5s steps(90) 7.5s 1 normal both, cursor 1s step-end infinite;
     }
 }
-.requested_btn{
-        cursor: pointer;
-         border:  1px solid #fff;
-         padding: .8rem 1.3em;
-         font-size: 1.6rem;
-         color: #fff; 
-         border-radius: 1rem;
-         background-color: transparent;
-}
+
+
+
 @keyframes type {
     from {
         width: 0;
-        border-right:solid;
-        
+        border-right: solid;
+
     }
 
     to {

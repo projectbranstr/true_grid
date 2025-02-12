@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 function Mainbanner() {
     const container = useRef();
+
     useEffect(() => {
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -27,6 +28,8 @@ function Mainbanner() {
 
     }, []);
 
+
+
     return (
         <>
 
@@ -39,7 +42,7 @@ function Mainbanner() {
                     playsInline
                     className="jsx-background-video"
                 >
-                    <source src="mov_bbb.mp4" type="video/mp4" />
+                    <source src="/img/bannerbg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 
@@ -81,6 +84,9 @@ function Mainbanner() {
                         </div>
                     </div>
                 </div>
+
+                <button className='requested_btn'>Request Access</button>
+
 
             </div>
 

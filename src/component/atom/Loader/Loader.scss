@@ -1,15 +1,39 @@
+//starter 
+
+
+.jsx_starter_container {
+    position: relative;
+}
+
+
+.jsx_form_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+
 .js_loader_main_container {
     background-color: #020D1B;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-
 }
 
 .js_logo_loader {
     width: 200px;
 
+}
+
+.js_logo_loader {
+    padding: .4rem;
 }
 
 .cls-1 {
@@ -96,4 +120,18 @@ rect:nth-child(8) {
 
 rect:nth-child(9) {
     animation-delay: 5s;
+}
+
+
+// button 
+
+.requested_btn {
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: .8rem 1.3em;
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 1rem;
+    background-color: transparent;
+    margin-top: 2rem;
 }
