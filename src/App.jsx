@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Layout from './Layout';
 import Article from './pages/Article';
 import Company from './pages/Company';
+import Loader from './component/atom/Loader/Loader';
 // import '@mantine/core/lib/styles/index.css'; 
 // import '@mantine/core/styles.css'
 // import '@mantine/core/styles.layer.css'
@@ -17,11 +18,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route path="/" element={<Home />} />
+          {/* <Route path='/' element={<Layout />}> */}
+            <Route path="/" element={<Loader />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/article" element={<Article />} />
             <Route path="/company" element={<Company />} />
-          </Route>
+          {/* </Route> */}
         </Routes>
       </BrowserRouter>
     </>
