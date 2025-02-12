@@ -1,7 +1,7 @@
 @use '../../theVariable' as *;
 
 .jsx_banner_primary_container {
-    background-image: url(/img/bnner_bg.png);
+    // background-image: url(/img/bnner_bg.png);
     width: 100%;
     background-size: cover;
 }
@@ -77,4 +77,34 @@
     padding: 0rem 2rem;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+
+
+// video 
+
+
+.jsx-video-container {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+}
+
+.jsx-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.jsx-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
