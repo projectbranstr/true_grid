@@ -1,6 +1,7 @@
 import React from 'react';
 import './Loader.scss';
 import Comingsoon from '../Comingsoon/Comingsoon';
+import FormPopup from '../../molecule/FormPopup/FormPopup';
 
 function Loader() {
     return (
@@ -32,12 +33,13 @@ function Loader() {
                     </svg>
 
 
-
+        
                     <Comingsoon />
 
                 </div>
-            </div>
 
+            </div>
+   <FormPopup />
         </>
     )
 }

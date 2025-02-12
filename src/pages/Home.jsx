@@ -169,9 +169,8 @@ function Home() {
             <HomeArticlesection />
             <Card data={popularBlogs} />
             <Testimonial />
-            <CardSlider sliderData={storyCard} varient />
-            <TreeTable items={data} />
-            <Footer />
+            <Card data={storyCard} varient/>
+            {/* <TreeTable items={data}/> */}
         </>
     )
 }
