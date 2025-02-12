@@ -7,6 +7,8 @@ import Statistics from '../component/sectiontemplate/statistics/statistics.jsx'
 import HomeArticlesection from '../component/sectiontemplate/HomeArticlesection/HomeArticlesection.jsx'
 import CardSlider from '../component/sectiontemplate/Slider/Slider.jsx'
 import TreeTable from '../component/sectiontemplate/TreeTable/TreeTable.jsx'
+import Header from '../component/molecule/Header/Header.jsx'
+import Footer from '../component/molecule/Footer/Footer.jsx'
 
 
 function Home() {
@@ -151,7 +153,7 @@ function Home() {
             subject: 'It is a long established fact that a reader will be distracted',
             sentDate: '01/01/2019',
             parentId: 5
-        },{
+        }, {
             id: 16,
             priority: 14,
             from: 'reacttreetable@simple.com',
@@ -161,6 +163,7 @@ function Home() {
         }];
     return (
         <>
+            <Header />
             <Mainbanner />
             {/* <Statistics title="Trending Statistics" /> */}
             <HomeArticlesection />

@@ -3,14 +3,18 @@ import ArticleSection from '../component/sectiontemplate/Articlesection/ArticleS
 import Articlebanner from '../component/sectiontemplate/Articlebanner/Articlebanner.jsx'
 import Card from '../component/molecule/Card/Card.jsx'
 import { popularBlogs, storyCard } from '../data/api.js'
+import Header from '../component/molecule/Header/Header.jsx'
+import Footer from '../component/molecule/Footer/Footer.jsx'
 
 function Article() {
   return (
     <>
+      <Header />
       <Articlebanner />
       <ArticleSection />
-      <Card data={storyCard} varient/>
+      <Card data={storyCard} varient />
       <Card data={popularBlogs} />
+      <Footer />
     </>
   )
 }
