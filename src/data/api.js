@@ -16,21 +16,21 @@ export const popularBlogs = {
             des: "Tips and tricks for maintaining a healthy lifestyle.",
         },
         {
-            img: "/blog3.png",
+            img: "/tesla2.png",
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
             des: "A guide to the top travel destinations for 2025.",
         }, 
         {
-            img: "/blog2.png",
+            img: "/tesla4.png",
             tag: "Health",
             date: "2025-01-15",
             title: "Healthy Living Tips",
             des: "Tips and tricks for maintaining a healthy lifestyle.",
         },
         {
-            img: "/blog3.png",
+            img: "/tesla1.png",
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
@@ -228,3 +228,32 @@ export const companies = [
         }, 
        
     ]}
+
+    export const mobileArticle = {
+        title: "Articles",
+        data: [
+            {
+                img: "/img/article12.png",
+                tag: "Technology",
+                date: "2025-02-07",
+                title: "Charted:Average Workers per U.S Startup (1994-2023)",
+                des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+            },
+            {
+                img: "/img/story2.png",
+    
+                tag: "Health",
+                date: "2025-01-15",
+                title: "Healthy Living Tips",
+                des: "Tips and tricks for maintaining a healthy lifestyle.",
+            },
+            {
+                img: "/img/story3.png",
+    
+                tag: "Travel",
+                date: "2024-12-20",
+                title: "Top Travel Destinations",
+                des: "A guide to the top travel destinations for 2025.",
+            }, 
+           
+        ]}

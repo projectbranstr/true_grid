@@ -4,7 +4,9 @@
     max-width: $max-width;
     margin: 0 auto;
 }
-
+.js_header_bg{
+    background-color: #091A2E;
+}
 .js_header_container {
     display: flex;
     justify-content: space-between;

@@ -17,7 +17,27 @@ $background-color: #020D1B;
 $card-border-radius: 1rem; // 10px
 $tab-title-font-size: 3rem; // 30px
 $max-width: 126.6rem; // 1200px
+$secondary-color: #2495E0;
 
+// .slick-slide {
+//     height: 80vh;
+//     background: #2196f3;
+//     text-align: center;
+//     color: white;
+//     font-size: 20px;
+//     display: table !important;
+//   }
+.slick-dots li{
+    border : 3px solid $secondary-color;
+    border-radius: 1rem;
+    &.slick-active{
+        background-color: $secondary-color;
+    }
+}
+.js_card_bg_color{
+    background-color: $background-glass-color-primary;
+    border-radius: 1rem;
+}
 .js_main_container{
   max-width: $max-width;
   margin: 0 auto;
@@ -41,6 +61,21 @@ $max-width: 126.6rem; // 1200px
 }
 .js_section_spacing {
     margin: 10rem 0;
+}
+
+.slider_show_in_mobile{
+  display: none;
+}
+.slider_show_in_desktop{
+    display: block;
+  }
+@media all and (max-width: 600px){
+    .slider_show_in_mobile{
+  display: block;
+    }
+    .slider_show_in_desktop{
+    display: none;
+  }
 }
 @media all and (max-width: 126.6rem){
     .js_main_container{

@@ -4,7 +4,7 @@ import './PrimaryHeading.scss';
 function PrimaryHeading({ title }) {
     return (
         <>
-            {title && <h3 className='jsx_primary_heading'>{title}</h3>}
+          {title && <h1 className="js_section_secondary_heading">{title}</h1>} 
         </>
     )
 }

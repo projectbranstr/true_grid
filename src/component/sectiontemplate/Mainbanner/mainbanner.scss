@@ -18,7 +18,7 @@
 }
 
 .jsx_banner_heading {
-    font-size: $primary-heading;
+    font-size: clamp(4rem, 6.5vw, $primary-heading);
     width: 70%;
     text-align: center;
 }
@@ -71,6 +71,10 @@
 }
 
 .jsx_companyname_maincontainer {
+    max-width: 50rem;
     display: flex;
     gap: 1rem;
+    padding: 0rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }

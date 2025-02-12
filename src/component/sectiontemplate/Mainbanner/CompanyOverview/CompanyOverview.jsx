@@ -25,7 +25,7 @@ const CompanyOverview = ({ data }) => {
                 </div>
             </div>
             </div>
-</div>
+        </div>
     );
 }
 

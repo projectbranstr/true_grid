@@ -1,142 +1,142 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"); 
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"); 
+// @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
 
-$nt-b-color: #337ab7;
-$nt-b-style: dashed;
+// $nt-b-color: #337ab7;
+// $nt-b-style: dashed;
 
-table tbody > tr {
-  padding: 1rem 0rem !important ;
-  border-bottom: 1px solid white;
-  // background-color: aqua;
-}
-td {
-  padding: 1rem 0rem !important ;
-}
-table {
-  color: #fff;
-  text-align: left;
-  font-size:1.6rem;
-  width: 100%;
-  margin-bottom: 0 !important;
+// table tbody > tr {
+//   padding: 1rem 0rem !important ;
+//   border-bottom: 1px solid white;
+//   // background-color: aqua;
+// }
+// td {
+//   padding: 1rem 0rem !important ;
+// }
+// table {
+//   color: #fff;
+//   text-align: left;
+//   font-size:1.6rem;
+//   width: 100%;
+//   margin-bottom: 0 !important;
   
-  tbody > tr > td:first-child {
-    width: 2%;
-    white-space: nowrap;
-  }
-}
+//   tbody > tr > td:first-child {
+//     width: 2%;
+//     white-space: nowrap;
+//   }
+// }
 
-span.fa {
-  transition: all 400ms;
+// span.fa {
+//   transition: all 400ms;
   
-  &:hover {
-    cursor: pointer !important;
-    color: #fff;
-  }
-}
+//   &:hover {
+//     cursor: pointer !important;
+//     color: #fff;
+//   }
+// }
 
-.tr-selected {
-  > td:not(:first-child) {
-    background-color: $nt-b-color;
-    color: #fff;
-  }
-}
+// .tr-selected {
+//   > td:not(:first-child) {
+//     background-color: $nt-b-color;
+//     color: #fff;
+//   }
+// }
 
-.tr-detail {
-  > td {
-    padding: 0 !important;
-    padding-bottom: 10px !important;
+// .tr-detail {
+//   > td {
+//     padding: 0 !important;
+//     padding-bottom: 10px !important;
     
-    &:first-child {
-      // No styles here, can add if needed
-    }
+//     &:first-child {
+//       // No styles here, can add if needed
+//     }
 
-    border-top: none !important;
+//     border-top: none !important;
 
-    &:not(:first-child) {
-      padding: 5px 5px 5px 5px;
-    }
-  }
-}
+//     &:not(:first-child) {
+//       padding: 5px 5px 5px 5px;
+//     }
+//   }
+// }
 
-.detail-content {
-  ul,
-  li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+// .detail-content {
+//   ul,
+//   li {
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//   }
 
-  ul {
-    li {
-      border: 2px $nt-b-style $nt-b-color;
-      border-width: 0 0 0px 1px;
-      display: flex;
+//   ul {
+//     li {
+//       border: 2px $nt-b-style $nt-b-color;
+//       border-width: 0 0 0px 1px;
+//       display: flex;
       
-      .detail {
-        margin: 0;
-        padding: 0 10px 5px 0;
-        margin-bottom: 10px;
-        flex-grow: 1;
-        flex-basis: 100%;
+//       .detail {
+//         margin: 0;
+//         padding: 0 10px 5px 0;
+//         margin-bottom: 10px;
+//         flex-grow: 1;
+//         flex-basis: 100%;
         
-        fieldset {
-          border: 1px solid $nt-b-color;
+//         fieldset {
+//           border: 1px solid $nt-b-color;
           
-          legend {
-            font-size: 90%;
-            margin-left: 5px;
-            width: auto;
-            margin-bottom: 0;
-            border: none;
-          }
+//           legend {
+//             font-size: 90%;
+//             margin-left: 5px;
+//             width: auto;
+//             margin-bottom: 0;
+//             border: none;
+//           }
 
-          > div {
-            margin-left: 5px;
-            margin-right: 12px;
+//           > div {
+//             margin-left: 5px;
+//             margin-right: 12px;
             
-            table.table-condensed {
-              tbody > tr > td {
-                padding: 2px;
-              }
-            }
-          }
-        }
+//             table.table-condensed {
+//               tbody > tr > td {
+//                 padding: 2px;
+//               }
+//             }
+//           }
+//         }
 
-        // .panel {
-        //   margin: 0;
-        //   border-style: dotted;
-        //   .panel-heading {
-        //     padding: 2px 5px;
-        //     border-bottom-style: dotted;
-        //   }
-        //   .panel-body {
-        //     padding: 5px;
-        //   }
-        // }
+//         // .panel {
+//         //   margin: 0;
+//         //   border-style: dotted;
+//         //   .panel-heading {
+//         //     padding: 2px 5px;
+//         //     border-bottom-style: dotted;
+//         //   }
+//         //   .panel-body {
+//         //     padding: 5px;
+//         //   }
+//         // }
 
-        &:first-child {
-          border-top: 1px $nt-b-style $nt-b-color;
-          flex-basis: 2%;
-          background: #1d2d41;
-          margin-top: 15px;
-        }
-      }
+//         &:first-child {
+//           border-top: 1px $nt-b-style $nt-b-color;
+//           flex-basis: 2%;
+//           background: #1d2d41;
+//           margin-top: 15px;
+//         }
+//       }
 
-      &:first-child {
-        padding-top: 5px;
-      }
+//       &:first-child {
+//         padding-top: 5px;
+//       }
 
-      &:last-child {
-        margin-bottom: 20px;
+//       &:last-child {
+//         margin-bottom: 20px;
         
-        > .detail {
-          margin-bottom: 0;
+//         > .detail {
+//           margin-bottom: 0;
 
-          &:first-child {
-            margin-left: -1px;
-          }
-        }
-      }
-    }
-  }
-}
+//           &:first-child {
+//             margin-left: -1px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

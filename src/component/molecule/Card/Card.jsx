@@ -1,13 +1,17 @@
 import React from 'react'
 import './card.scss';
+import CardSlider from '../../sectiontemplate/Slider/Slider';
 
-const Card = ({ data  , varient}) => {
+
+const Card = ({ data, varient }) => {
   return (
-    <div className="
-    js_section_spacing">
-    <div className="js_main_container ">
 
-       {data?.title && <h1 className="js_section_secondary_heading">{data.title}</h1>} 
+    <>
+       <div className="
+    js_section_spacing slider_show_in_desktop">
+      <div className="js_main_container ">
+
+        {data?.title && <h1 className="js_section_secondary_heading">{data.title}</h1>}
         {data.heading && <h1>{data.title}</h1>}
         <div className="js_card_container">
           {data?.data.map((item, index) => (
@@ -20,15 +24,18 @@ const Card = ({ data  , varient}) => {
                 <div className="js_heading_with_btn">
                   <h4 className="js_card_title">{item.title}</h4>
                   {/* <span>&#x2197;</span> */}
-                  </div>
-                
+                </div>
+
                 <p className="js_card_content">{item.des}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      </div>
+    </div>
+   <CardSlider sliderData={data}/>
+    </>
+ 
   )
 }
 

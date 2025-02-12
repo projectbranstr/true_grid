@@ -26,7 +26,7 @@ function Testimonial() {
         <>
 
             <div className="jsx_primary_container">
-                <div class="jsx_testimonial-container">
+                <div className="jsx_testimonial-container">
                     <div className="jsx_test_img_container">
                         <img src="/img/avatar.png" alt="Tetimonial_img" className="" />
                     </div>
