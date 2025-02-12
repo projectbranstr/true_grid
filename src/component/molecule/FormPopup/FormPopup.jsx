@@ -1,14 +1,15 @@
 import React from 'react'
 import "./formpopup.scss"
-function FormPopup() {
+function FormPopup({ref}) {
   return (
-    <form className='true_grid_pop_form'>
+    <form className='true_grid_pop_form' ref={ref}> 
 
       <div className="true_grid_form_layout">
         <h className="form_heading">Join our Waitlist</h>
         <input type='text'  className="true_grid_form_field" placeholder='Email*' />
         <input type='text' className="true_grid_form_field" placeholder='Name*' />
         <select className='true_grid_form_field'>
+        <option value=""> How do you plan to use True Grid </option>
 
           <option> Personal Use</option>
           <option> Use in my Organization</option>
@@ -16,6 +17,7 @@ function FormPopup() {
 
         </select>
         <select className='true_grid_form_field'>
+          
           <option> Finacial</option>
           <option> Sports </option>
           <option> Places</option>

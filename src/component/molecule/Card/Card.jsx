@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Card = ({ data, varient }) => {
+const Card = ({ data, varient , ref}) => {
 const container = useRef();
 useEffect(() => {
   // const line = SplitType.create('#h_1');
@@ -18,15 +18,14 @@ useEffect(() => {
      
     });
     tl.fromTo(
-      ".secondary_heading_animation",
+      `${varient ? ".secondary_heading_animation-1" : ".secondary_heading_animation"}`,
       { opacity: 0, y: 40},
       { opacity: 1, y: 0, duration: 0.8 , stagger: 0.2},
       "0").fromTo(
-        ".js_card_animation",
-        { opacity: 0, y: 100},
-        { opacity: 1, y: 0, duration: 1 , stagger:0.29
-        },
-        "0.5")
+        `${ varient ? ".js_card_animation-1": ".js_card_animation"}`,
+        { opacity: 0, y: 100,},
+        { opacity: 1, y: 0, duration: 1 , stagger:0.2 },
+        "0.4")
 
   return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
   
@@ -38,11 +37,11 @@ useEffect(() => {
     js_section_spacing slider_show_in_desktop">
       <div className="js_main_container " ref={container}>
 
-        {data?.title && <h1 className="js_section_secondary_heading secondary_heading_animation">{data.title}</h1>}
+        {data?.title && <h1 className={`js_section_secondary_heading ${varient ? "secondary_heading_animation-1" : "secondary_heading_animation"}`}>{data.title}</h1>}
         {data.heading && <h1>{data.title}</h1>}
         <div className="js_card_container">
           {data?.data.map((item, index) => (
-            <div key={index} className='js_card_animation'>
+            <div key={index} className={` ${varient ? "js_card_animation-1" : "js_card_animation"}`}>
               <div className='js_card_header'>
                 <div className={`js_bg_img js_card_size ${varient && "js_card_height"}`} style={{ backgroundImage: `url(${item.img})` }}></div>
               </div>

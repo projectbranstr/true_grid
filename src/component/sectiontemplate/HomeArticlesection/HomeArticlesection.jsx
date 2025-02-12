@@ -3,7 +3,10 @@ import './HomeArticlesection.scss'
 import PrimaryHeading from '../../atom/PrimaryHeading/PrimaryHeading'
 import Card1 from '../../molecule/Card1/Card1'
 import CardSlider from '../Slider/Slider'
-import { mobileArticle } from '../../../data/api'
+import { mobileArticle } from '../../../data/api';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 const item = {
     img: "/img/article12.png",
     tag: "Technology",
