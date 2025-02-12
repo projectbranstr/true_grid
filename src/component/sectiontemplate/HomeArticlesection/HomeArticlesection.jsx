@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useRef , useEffect} from 'react'
 import './HomeArticlesection.scss'
 import PrimaryHeading from '../../atom/PrimaryHeading/PrimaryHeading'
 import Card1 from '../../molecule/Card1/Card1'
@@ -12,7 +12,6 @@ const item = {
     des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
 }
 const item1 = [{
-
     img: "",
     tag: "Technology",
     date: "2025-02-07",
@@ -54,9 +53,30 @@ const recentlyArticle = [
     }
 ]
 function HomeArticlesection() {
+ const container = useRef();
+    // useEffect(() => {
+    //     // const line = SplitType.create('#h_1');
+    //       const tl = gsap.timeline({
+    //         scrollTrigger: {
+    //           trigger: container.current,
+    //           start: "top+=30 bottom",
+    //           end: "bottom",
+              
+    //         },
+           
+    //       });
+    //       tl.fromTo(
+    //         ".true_grid",
+    //         { opacity: 0, y: 30},
+    //         { opacity: 1, y: 0, duration: 0.8 , stagger: 0.2},
+    //         "0")
+     
+    //     return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        
+    //     }, []); 
     return (
         <>
-            <div className="jsx_articlesection_container slider_show_in_desktop" >
+            <div className="jsx_articlesection_container slider_show_in_desktop" ref={container}>
                 <PrimaryHeading title="Articles" />
                 <div className='js_home_article_container'>
                     <div className="js_card_bg_color">
