@@ -12,7 +12,7 @@ useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: container.current,
-        start: "top+=30 bottom",
+        start: "top+=150 bottom",
         end: "bottom",
       },
      

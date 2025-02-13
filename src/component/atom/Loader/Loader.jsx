@@ -11,6 +11,7 @@ function Loader() {
 
   useEffect(() => {
     if (isOpen) {
+        
       // Animation for opening the pop-up
       gsap.fromTo(
         popRef.current,
