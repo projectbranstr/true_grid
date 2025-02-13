@@ -4,14 +4,10 @@
 .jsx_starter_container {
     position: relative;
 }
-.form_pop_hide{
 
-    display: none;
-}
+
 .jsx_form_main {
-    
-   background-color: #020D1B;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -43,13 +39,16 @@
 .cls-1 {
     stroke-dasharray: 5000;
     stroke-dashoffset: 5000;
-    animation: draw 5s linear forwards;
+
+    animation: draw 6s linear forwards;
     /* , fillColor 3s forwards */
 
     fill: none;
     stroke: #b4c7de;
     stroke-miterlimit: 10;
     stroke-width: 8px;
+    paint-order:fill;
+    stroke-linecap: square;
 
 
 }

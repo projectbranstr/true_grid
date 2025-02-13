@@ -1,0 +1,56 @@
+@use '../../theVariable' as *;
+
+
+
+.js_loader2_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.js_svg_animaton {
+    width: 250px;
+    height: auto;
+    stroke: #b4c7de;
+    /* Change the stroke color as needed */
+    stroke-width: 8;
+    fill: none;
+    stroke-linecap: square;
+    padding: 1.5rem;
+
+}
+
+.js_cls-1,
+.js_cls-2 {
+    stroke-dasharray: 2100;
+    stroke-dashoffset: 2100;
+    animation: drawAnim 5s ease-in-out forwards;
+}
+
+.js_cls-3 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: drawAnim 5s 3s ease-in-out forwards;
+}
+
+.js_cls-0 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: drawAnim 3s ease-in-out forwards;
+}
+
+@keyframes drawAnim {
+    0% {
+        stroke-dashoffset: 2100;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
