@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import "./formpopup.scss"
 
 
-function FormPopup() {
+function FormPopup({onClick}) {
 
 
     return (
-        <form className='true_grid_pop_form'>
+        <form className='true_grid_pop_form' onClick={onClick}>
 
             {/* {isOpen && ( */}
             <div className="true_grid_form_layout">

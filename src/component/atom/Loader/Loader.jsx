@@ -8,7 +8,6 @@ function Loader() {
 
     const [isOpen, setIsOpen] = useState(false);
   const popRef = useRef(null);
-
   useEffect(() => {
     if (isOpen) {
         
@@ -75,7 +74,7 @@ function Loader() {
 
              
                    <div className="jsx_form_main" style={{visibility: isOpen ? "visible" : "hidden"}} ref={popRef}  onClick={togglePopup}>
-                        <FormPopup />
+                        <FormPopup onClick={(e) => e.stopPropagation()}/>
                     </div>
             </div>
 
