@@ -44,7 +44,7 @@ $secondary-color: #2495E0;
   padding: 0;
 }
 .js_section_secondary_heading{
-    font-size: $secondary-heading;
+    font-size:  clamp(2.8rem, 5vw, $secondary-heading);
     font-family: $primary-font-family;
     font-weight: 700;
     color: $font-color;

@@ -58,3 +58,9 @@
     font-family: $tertiary-font-family;
     color: $paragraph-color;
 }
+
+@media  all and (max-width: 600px) {
+    .js_discover_card_container{
+        flex-direction: column;
+    }
+}

@@ -21,3 +21,10 @@
     color: $font-color;
     background-color: #2495E0;
 }
+
+@media  all and (max-width: 600px) {
+    
+    .js_header_container{
+        padding:3% 1rem;
+    }
+}

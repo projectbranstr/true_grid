@@ -8,7 +8,15 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
+.js_company_img_width{
+ width: 100%;
+}
+.js_company_overview_container>*:nth-child(1) {
+   width: 60%; 
+}
+.js_company_overview_container>*:nth-child(2) {
+    width: 40%;
+}
 .column {
     flex: 1;
     margin: 10px;
@@ -29,4 +37,18 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
+}
+
+@media all and (max-width:600px){
+    
+    .js_company_overview_container{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .js_company_overview_container>*:nth-child(1) {
+        width: 100%; 
+     }
+     .js_company_overview_container>*:nth-child(2) {
+         width: 100%;
+     }
 }

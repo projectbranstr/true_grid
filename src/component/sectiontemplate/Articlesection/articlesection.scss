@@ -137,7 +137,7 @@
 }
 
 .js_accordian_title h6 {
-    font-size: $tertiary-heading;
+    font-size:clamp(2rem, 3vw, $tertiary-heading) ;
     padding: 1rem 0;
 }
 
@@ -190,6 +190,8 @@
 // accordian right part 
 
 .js_articledata_right_container div:nth-child(1) {
+    padding-top: 3rem;
+
     font-size: 23px;
     font-weight: 600;
 }

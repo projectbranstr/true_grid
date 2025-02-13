@@ -13,28 +13,32 @@ export const popularBlogs = {
             tag: "Health",
             date: "2025-01-15",
             title: "Healthy Living Tips",
-            des: "Tips and tricks for maintaining a healthy lifestyle.",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
         },
         {
             img: "/tesla2.png",
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
-            des: "A guide to the top travel destinations for 2025.",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
         }, 
         {
             img: "/tesla4.png",
             tag: "Health",
             date: "2025-01-15",
             title: "Healthy Living Tips",
-            des: "Tips and tricks for maintaining a healthy lifestyle.",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
         },
         {
             img: "/tesla1.png",
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
-            des: "A guide to the top travel destinations for 2025.",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
         }
     ]
 }
@@ -47,7 +51,7 @@ export const latestNews = {
             tag: "Technology",
             date: "2025-02-07",
             title: "Charted:Average Workers per U.S Startup (1994-2023)",
-            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+            des: "Startups are famous for starting small.",
         },
         {
             img: "/elon.png",
@@ -216,7 +220,8 @@ export const companies = [
             tag: "Health",
             date: "2025-01-15",
             title: "Healthy Living Tips",
-            des: "Tips and tricks for maintaining a healthy lifestyle.",
+                       des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
         },
         {
             img: "/img/story3.png",
@@ -224,7 +229,8 @@ export const companies = [
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
-            des: "A guide to the top travel destinations for 2025.",
+                       des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
         }, 
        
     ]}

@@ -16,7 +16,7 @@ $border_color: #DCD9D9;
     $border_color;
 }
 .js_analyse_tab_button{
-    font-size: 2rem;
+    font-size:clamp(1rem, 2.8vw, 2rem);
     background-color:  transparent;
     color: $font-color;
     border: none;
@@ -29,7 +29,6 @@ $border_color: #DCD9D9;
 .js_analyse_dropdowns{
     display: flex;
     gap: 1rem;
-    align-items: center;
 }
 .js_analyse_tab_select{
     padding:0.8rem 0.6rem;
@@ -47,4 +46,15 @@ $border_color: #DCD9D9;
 .js_analyse_tab_content{
   width: 100%;
 //   height: 600px;
+}
+
+@media all and (max-width:600px) {
+    .js_analyse_tab_button{
+        padding: 1rem;
+    }
+    .js_analyse_dropdowns
+{
+flex-direction: column;
+
+}
 }

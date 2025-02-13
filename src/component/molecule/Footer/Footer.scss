@@ -113,3 +113,27 @@
 .js_copyright_link {
    font-size: 1.4rem;
 }
+
+@media all and (max-width:600px){
+    .js_footer_main_container
+{
+ flex-direction: column;
+}
+.js_footer_links > div{
+
+    padding: 0rem 2rem;
+}
+.js_footer_second_element{
+    padding-bottom: 2rem;
+}
+.js_contryname_container {
+    flex-wrap: wrap;
+}
+.js_footer_links{
+    margin: 4rem 0;
+    flex-direction: column;
+}
+.js_footer_copyright_container{
+    padding: 3rem 3%;
+}
+}

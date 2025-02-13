@@ -27,7 +27,7 @@ function Articlebanner() {
                 { opacity: 1, y: 0, duration: 0.8, }, "0.3").fromTo(
                     ".social_icon_animation",
                     { opacity: 0, y: 30 },
-                    { opacity: 1, y: 0, duration: 0.8, stagger: 0.2})
+                    { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3")
 
         return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
 

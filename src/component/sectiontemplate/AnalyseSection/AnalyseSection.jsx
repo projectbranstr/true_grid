@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect, useRef } from 'react'
 import './analysesection.scss'
 import SankeyDiagram from '../../molecule/SankeyDiagram/SankeyDiagram';
 import StockChart from '../StockChart/StockChart';
 import NestedTable from '../NestedTable/NestedTable';
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 const  AnalyseSection = () =>{
     // Data for tabs and their content
     const data1 =  [
@@ -413,12 +415,36 @@ const  AnalyseSection = () =>{
         const activeTabData = data.tabs.find(tab => tab.id === activeTab);
         return <div>{activeTabData ? activeTabData.content : 'No content available'}</div>;
     }
+    const container = useRef();
+ useEffect(() => {
+    // const line = SplitType.create('#h_1');
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: container.current,
+            start: "top+=30 bottom",
+            end: "bottom",
+        },
+    });
+    tl.fromTo(
+        ".heading_animate",
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 },
+        "0")
+    .fromTo
+        (
+            ".js_analyse_tab_button",
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3").fromTo(".js_analyse_tab_select",
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3")
 
+    return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+
+}, []);
     return (
         <div className='js_analyse_main_container js_section_spacing'>
-            <div className="js_main_container">
-                <h1 className="js_section_secondary_heading">Analyse and Expense</h1>
-
+            <div className="js_main_container" ref={container}>
+                <h1 className="js_section_secondary_heading heading_animate">Analyse and Expense</h1>
                 <div className="js_analyse_tab_container">
                     <div className="js_analyse_tab">
                         <div className="js_analyse_tabs">

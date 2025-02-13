@@ -54,7 +54,7 @@ const CompanyOverview = ({ data }) => {
                         </p>)}
                     </div>
                     <div className="js_company_overview_img">
-                        <img src="/teslatown.png" alt="Company Overview" ref={sectionImg} />
+                        <img className="js_company_img_width" src="/teslatown.png" alt="Company Overview" ref={sectionImg} />
                         <div className="js_company_overview_buttons">
                             {data?.buttons.map((item, index) => <button className='overview_btn' key={index}><img src={item.icon} alt={item.icon} /> <span>{item.title}</span></button>)}
                         </div>

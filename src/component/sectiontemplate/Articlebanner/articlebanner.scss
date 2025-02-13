@@ -2,6 +2,7 @@
 
 
 .js_article_main_container {
+    padding-top: 4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -17,7 +18,7 @@
 }
 
 .js_article_container h4 {
-    font-size: $secondary-heading;
+    font-size:  clamp(2.8rem, 5vw, $secondary-heading);
 }
 
 .js_article_container p {
@@ -26,6 +27,7 @@
 }
 
 .js_banner_second_compnaycontainer {
+    color: $font-color;
     display: flex;
     border: none;
     padding: 1.5rem 3rem;
@@ -61,4 +63,19 @@
     border-radius: 2.42px;
     border: none;
 
+}
+@media  all and (max-width:600px) {
+.js_article_main_container {
+    padding: 0 3%;
+    padding-top: 4rem;
+   flex-direction: column;
+   gap: 3rem;
+    justify-content: space-between;
+}
+.js_article_main_container >div:nth-child(1) {
+  width: 100%; 
+}
+.js_article_main_container >div:nth-child(2) {
+    width: 100%; 
+ }
 }

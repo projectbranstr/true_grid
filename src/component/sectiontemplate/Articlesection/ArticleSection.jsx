@@ -1,7 +1,57 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect, useRef} from 'react';
 import './articlesection.scss';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 function ArticleSection() {
-    const [openIndex, setOpenIndex] = useState(0);
+    const container = useRef();
+    const container1 = useRef();
+ 
+    useEffect(() => {
+        // const line = SplitType.create('#h_1');
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: container.current,
+                start: "top+=30 bottom",
+                end: "bottom",
+
+            },
+
+        });
+        tl.fromTo(
+            ".js_article_img_container",
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 },
+            "0").fromTo
+            (
+                ".js_blogs_article_animation",
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3")
+
+        return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+
+    }, []);
+    useEffect(() => {
+        // const line = SplitType.create('#h_1');
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: container1.current,
+                start: "top+=30 bottom",
+                end: "bottom",
+
+            },
+
+        });
+        tl.fromTo(
+            ".js_acordian_animation",
+            { opacity: 0, y: 90 },
+            { opacity: 1, y: 0, duration: 1, stagger: 0.2 },
+            "0")
+
+        return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+
+    }, []);
+    const [openIndex, setOpenIndex] = useState(5);
     const dummyData = [
         {
             title: "Global Nuclear Energy Generation by Region in 2023",
@@ -62,7 +112,7 @@ function ArticleSection() {
     
     return (
         <>
-            <div className="jsx_main_container">
+            <div className="jsx_main_container" ref={container}>
 
 
                 <div className="js_article_main_container">
@@ -70,19 +120,19 @@ function ArticleSection() {
                         <img src='/img/tesla_article.png' alt='article_img' />
                     </div>
 
-                    <div className="js_article_sidebar_top">
-                        <div className="js_search_container">
+                    <div className="js_article_sidebar_top js_blogs_article_animation">
+                        <div className="js_search_container ">
                             <input type="text" placeholder='Search...' />
                             <img src='/img/search_icon.png' alt='search_icon' />
                         </div>
                         <hr />
 
                         <div className='js_sidebar_heading'>
-                            <div className='js_sidebar_heading_active'>Latest</div>
-                            <div className=''>Popular</div>
+                            <div className='js_sidebar_heading_active js_blogs_article_animation'>Latest</div>
+                            <div className='js_blogs_article_animation'>Popular</div>
                         </div>
 
-                        <div className='js_article_container_cards'>
+                        <div className='js_article_container_cards js_blogs_article_animation'>
                             <img src='/img/tesla_article01.png' alt='article_img' />
                             <div className='js_article_title'>
                                 <div>TSLA / 12 hours ago</div>
@@ -96,7 +146,7 @@ function ArticleSection() {
 
                 <div className='js_article_main_container'>
 
-                    <div className="js_articledata_left_container">
+                    <div className="js_articledata_left_container" ref={container1}>
 
                         <div className="js_article_left_inner">
 
@@ -106,7 +156,7 @@ function ArticleSection() {
 
                                 {dummyData.map((item, index) => {
                                     return (
-                                          <div className="js_accordian_container border p-4 mb-2 rounded shadow" key={index}>
+                                          <div className="js_accordian_container border p-4 mb-2 rounded shadow js_acordian_animation" key={index}>
                                             <div
                                                 className="js_accordian_title flex justify-between items-center cursor-pointer bg-gray-200 p-2 rounded"
                                                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)} // Toggle logic for open/close
@@ -124,19 +174,6 @@ function ArticleSection() {
                                         </div>
                                     );
                                 })}
-
-
-
-                        </div>
-
-                        <div className="js_accordian_container">
-
-                            {/* accordian header  */}
-                            <div className="js_accordian_title">
-                                <h6>Global Nuclear Energy Generation by Region in 2023</h6>
-                                <div>+</div>
-                            </div>
-
                         </div>
 
                     </div>
@@ -147,8 +184,6 @@ function ArticleSection() {
 
 
                 </div>
-
-                
             </div>
         </>
     )

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 const SankeyDiagram = () => {
   const containerRef = useRef(null);
-
+ 
   useEffect(() => {
     // Make sure Highcharts and the Sankey module are available globally
     const scriptHighcharts = document.createElement('script');
@@ -48,7 +48,7 @@ const SankeyDiagram = () => {
             nodeWidth: 30,
             nodePadding: 300,
             tooltip: {
-              pointFormat: '<b style="color:red">Company - Branstr<b></b></br><b>Name -  Ritesh sir </br> <b>Total expensive - 500 Rupees <b>'
+              pointFormat: '<b style="font-size: 14px">Company - Tesla<b></b></br><b>Profit - $34.34b <b> </br>Total expensive - $34.5b <b>'
             },
             name: 'TESLA Sankey',
             nodes: [{
