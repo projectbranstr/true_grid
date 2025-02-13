@@ -114,15 +114,14 @@ function Footer() {
                             <div className="js_footer_blog" ref={container1}>
                                 <div className="js_footer_blog_heading blog_animate_heading" >Our Blog</div>
                                 <div className="js_contryname_container  blog_tag_animate">
-                                    <button>IRELAND</button>
-                                    <button>UK</button>
-                                    <button>Health Insurance</button>
-                                    <button>IRELAND</button>
-                                    <button>Retirement</button>
-                                    <button>IRELAND</button>
-                                    <button>IRELAND</button>
-                                    <button>IRELAND</button>
-                                </div>
+                                    <button>TSLA</button>
+                                    <button>MSFT</button>
+                                    <button>NFLX</button>
+                                    <button>GOOGLE</button>
+                                    <button>SUBX</button>
+                                    <button>GOOGLE</button>
+                                    <button>TSLA</button>
+                                 </div>
                                 <div className="js_social_icon  blog_tag_animate">
                                     <img src="/img/github.png" alt='social_icon' />
                                     <img src="/img/footer_icon2.png" alt='social_icon' />
