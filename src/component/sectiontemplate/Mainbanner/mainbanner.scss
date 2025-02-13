@@ -4,6 +4,7 @@
     // background-image: url(/img/bnner_bg.png);
     width: 100%;
     background-size: cover;
+    background-image: linear-gradient(0deg, #020D1B, transparent);
 }
 
 .jsx_bannermain_container {
@@ -100,6 +101,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
 }
 
 .jsx-content {

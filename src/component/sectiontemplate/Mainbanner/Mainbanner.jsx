@@ -3,6 +3,8 @@ import './mainbanner.scss'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+
+
 function Mainbanner() {
     const container = useRef();
 
@@ -31,6 +33,7 @@ function Mainbanner() {
 
 
     return (
+
         <>
 
             <div className="jsx-video-container">
