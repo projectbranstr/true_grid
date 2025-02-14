@@ -10,7 +10,7 @@
 }
 
 .js_card_container {
-    
+    font-family: $tertiary-font-family;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
@@ -39,7 +39,7 @@
 
 .js_card_tag {
     font-size: $card-date-font-size;
- 
+    font-family: $tertiary-font-family;
 }
 .js_card_body{
     padding: 1.2rem;
@@ -47,7 +47,7 @@
 }
 .js_card_title {
     font-size: $card-heading-font-size;
-    font-family: $primary-font-family;
+    font-family:$secondary-font-family;
     color: $font-color;
     padding: 0.8rem 0;
     margin-bottom: 0.5rem;

@@ -23,14 +23,13 @@ function Home() {
         <>
             <Header />
             <Mainbanner />
-            {/* <TrendingSlider sliderData={storyCard}/> */}
+            <TrendingSlider sliderData={storyCard}/>
             {/* <Statistics title="Trending Statistics" /> */}
             <HomeArticlesection />
             <Card data={popularBlogs} />
             <Testimonial />
             <Card data={storyCard} containerRef={storyCardRefContainer} varient />
             <Footer />
-            <TreeTable items={Treedata}/>
         </>
     )
 }

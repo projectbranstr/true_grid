@@ -24,10 +24,13 @@
 
 .jsx_author_container {
     font-size: 2rem;
+    font-family: $tertiary-font-family;
+
 }
 
 .jsx_quote_container {
     font-size:clamp(1.8rem, 2vw ,2.8rem);
+    font-family: $tertiary-font-family;
     text-align: center;
     padding: 0rem 5rem;
 }

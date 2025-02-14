@@ -43,11 +43,15 @@
 
 .js_link_header {
     font-size: 1.6rem;
+    font-family: $tertiary-font-family;
+
     font-weight: 500;
 }
 
 .js_footer_links_items>li {
     font-size: 1.6rem;
+    font-family: $tertiary-font-family;
+
     margin-top: 1.5rem;
 }
 
@@ -100,6 +104,8 @@
 .js_footer_copyright_header div {
     // color: #979b9c;
     font-size: 1.4rem;
+    font-family: $tertiary-font-family;
+
 }
 
 
@@ -107,11 +113,15 @@
 .js_footer_copyright_container p {
     // color: #979b9c;
     font-size: 1.4rem;
+    font-family: $tertiary-font-family;
+
     margin: 2rem 0;
 }
 
 .js_copyright_link {
    font-size: 1.4rem;
+   font-family: $tertiary-font-family;
+
 }
 
 @media all and (max-width:600px){

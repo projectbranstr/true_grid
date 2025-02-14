@@ -5,7 +5,7 @@ $tertiary-heading: 3rem; // 30px
 $background-glass-color-primary: #1d2d41;
 $background-glass-color-secondary: #9f9ca5;
 $primary-font-family: 'Monstreat', sans-serif;
-$secondary-font-family: 'Playfair Display', serif;
+$secondary-font-family: "Playfair Display", serif;
 $tertiary-font-family: 'Lato', sans-serif;
 $para-graph-font-size: 1.6rem; // 16px
 $font-color: white;
@@ -34,6 +34,7 @@ $secondary-color: #2495E0;
         background-color: $secondary-color;
     }
 }
+
 .js_card_bg_color{
     background-color: $background-glass-color-primary;
     border-radius: 1rem;
@@ -70,6 +71,13 @@ $secondary-color: #2495E0;
     display: block;
   }
 @media all and (max-width: 600px){
+
+  .slick-initialized .slick-slide{
+    padding: 0 1rem;
+  }
+  .slider_margin-right{
+  margin-right: 2rem;
+  }
     .slider_show_in_mobile{
   display: block;
     }
@@ -78,6 +86,7 @@ $secondary-color: #2495E0;
   }
 }
 @media all and (max-width: 126.6rem){
+
     .js_main_container{
         padding: 0 3%; 
         box-sizing: content-box;

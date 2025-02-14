@@ -17,21 +17,17 @@ function Loader() {
         { y: -500, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.5 }
       );
-    } else {
-      // Animation for closing the pop-up
+    }
+  }, [isOpen]);
+
+  const togglePopup = () => {
+    if (isOpen) {
       gsap.to(popRef.current, {
         y: -500,
         opacity: 0,
         duration: 0.5,
         onComplete: () => setIsOpen(false), // Set isOpen to false after animation
       });
-    }
-  }, [isOpen]);
-
-  const togglePopup = () => {
-    // Triggering opening or closing based on current state
-    if (isOpen) {
-      setIsOpen(false); // Start the closing animation
     } else {
       setIsOpen(true); // Start the opening animation
     }
@@ -73,9 +69,9 @@ function Loader() {
                 </div>
 
              
-                   <div className="jsx_form_main" style={{visibility: isOpen ? "visible" : "hidden"}} ref={popRef}  onClick={togglePopup}>
+                {isOpen && <div className="jsx_form_main" ref={popRef}  onClick={togglePopup}>
                         <FormPopup onClick={(e) => e.stopPropagation()}/>
-                    </div>
+                    </div>}   
             </div>
 
         </>

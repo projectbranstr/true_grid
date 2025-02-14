@@ -1,67 +1,38 @@
-import React, { useEffect } from 'react';
-import "./style.scss";
+import React, { useEffect, useState } from 'react';
+import './style.scss';
 import $ from 'jquery';
 
 const TreeTable = ({ items }) => {
+  const [expandedRows, setExpandedRows] = useState({});
 
   useEffect(() => {
-    // This is where you will run your jQuery code.
-    // Make sure the DOM is fully rendered before initializing jQuery
-    $(document.body).delegate('.expand', 'click', function () {
-      const level = $(this).attr('data-level');
-      const partLevel = $(this).attr('data-part-level');
-      const allLevel = $(this).attr('data-all-level');
-      const isOpen = $(this).attr('data-is-open');
-      const trsDiv = $('.tree-table').find('tbody tr');
-      const trsArray = $(trsDiv);
+    const handleExpandCollapse = (event) => {
+      const $button = $(event.target);
+      const level = $button.data('level');
+      const partLevel = $button.data('part-level');
+      const isOpen = $button.data('is-open');
 
-      if (isOpen === '1') {
-        for (let i = 0; i < trsArray.length - 1; i++) {
-          const tempTr = $(trsArray[i]);
-          const trLevel = tempTr.attr('data-level');
-          const trPartLevel = tempTr.attr('data-part-level');
-          const trAllLevel = tempTr.attr('data-all-level');
-          const contain = trAllLevel.split('_')[Number(level)];
-          const curr = partLevel.split('_');
-          if (contain && contain === curr[curr.length - 1] && partLevel !== trPartLevel) {
-            tempTr.removeClass('show');
-            tempTr.addClass('hidden');
-          }
-        }
-        $(this).text('+');
-        $(this).attr('data-is-open', '0');
-      } else {
-        for (let i = 0; i < trsArray.length - 1; i++) {
-          const tempTr = $(trsArray[i]);
-          const trLevel = tempTr.attr('data-level');
-          const trPartLevel = tempTr.attr('data-part-level');
-          const trAllLevel = tempTr.attr('data-all-level');
-          const contain = trAllLevel.split('_')[Number(level)];
-          const curr = partLevel.split('_');
-          if (contain && contain === curr[curr.length - 1] && Number(trLevel) > Number(level)) {
-            const span = $(tempTr.children()[0].children[Number(trLevel)]);
-            const isOpen = $(span).attr('data-is-open');
-            const childrenCount = $(span).attr('data-count');
-            tempTr.removeClass('hidden');
-            tempTr.addClass('show');
-            if (isOpen && isOpen === '0' && Number(childrenCount) > 0) {
-              i = i + Number(childrenCount);
-            } else {
-              if (isOpen === '1') {
-                $(span).attr('data-is-open', '1');
-                $(span).text('-');
-                tempTr.removeClass('hidden');
-                tempTr.addClass('show');
-              }
-            }
-          }
-        }
-        $(this).text('-');
-        $(this).attr('data-is-open', '1');
-      }
-    });
+      // Toggling expanded rows state
+      setExpandedRows((prev) => ({
+        ...prev,
+        [partLevel]: isOpen === '1' ? '0' : '1',
+      }));
+
+      // Update the button text
+      $button.text(isOpen === '1' ? '+' : '-');
+      $button.data('is-open', isOpen === '1' ? '0' : '1');
+    };
+
+    // Attach click handler to .expand buttons
+    $('.expand').on('click', handleExpandCollapse);
+
+    // Cleanup on component unmount
+    return () => {
+      $('.expand').off('click', handleExpandCollapse);
+    };
   }, []);
 
+  // Convert the flat list to a tree structure
   const flatListToTree = (items) => {
     const getChild = (item, level, allLevel) => {
       return items
@@ -72,49 +43,38 @@ const TreeTable = ({ items }) => {
             level,
             children: getChild(v, level + 1, level === 0 ? v.id : `${allLevel}_${v.id}`),
             partLevel: level === 0 ? v.id : `${v.parentId}_${v.id}`,
-            allLevel: level === 0 ? v.id : [allLevel, v.id].join('_'),
+            allLevel: level === 0 ? v.id : `${allLevel}_${v.id}`,
           };
           return [temp].concat(...temp.children);
         });
     };
 
-    return [].concat(...getChild({ id: undefined }, 0, undefined));
+    return getChild({ id: undefined }, 0, undefined).flat();
   };
 
-  function countChildren(node) {
-    let sum = 0;
-    const children = node && node.length ? node : node.children;
-    let i = children && children.length; // Change const to let here
-  
-    if (!i) {
-      sum = 0;
-    } else {
-      while (--i >= 0) {
-        if (node && node.length) {
-          sum++;
-          countChildren(children[i]);
-        } else {
-          sum += countChildren(children[i]);
-        }
-      }
-    }
-    return sum;
-  }
-  
+  // Count the number of children for a given node
+  const countChildren = (node) => {
+    if (!node || !node.children || !node.children.length) return 0;
+    return node.children.reduce((sum, child) => sum + countChildren(child), node.children.length);
+  };
 
+  // Create table rows from the flat-to-tree structure
   const createRows = () => {
     const rows = [];
     const opts = flatListToTree(items);
 
     opts.forEach((item) => {
       const count = countChildren(item);
-      const row = (
+      const isOpen = expandedRows[item.partLevel] === '1';
+      
+      rows.push(
         <tr
           key={item.allLevel}
           data-part-level={item.partLevel}
           data-all-level={item.allLevel}
           data-level={item.level}
           data-count={count}
+          className={isOpen ? 'show' : 'hidden'} // Toggle visibility based on isOpen state
         >
           <td>
             {Array.from({ length: item.level + 1 }).map((_, idx) => (
@@ -131,9 +91,9 @@ const TreeTable = ({ items }) => {
                     data-level={item.level}
                     data-part-level={item.partLevel}
                     data-all-level={item.allLevel}
-                    data-is-open="1"
+                    data-is-open={isOpen ? '1' : '0'}
                   >
-                    -
+                    {isOpen ? '-' : '+'}
                   </button>
                 ) : (
                   <span className="last-block"></span>
@@ -148,7 +108,6 @@ const TreeTable = ({ items }) => {
           <td>{item.from}</td>
         </tr>
       );
-      rows.push(row);
     });
 
     return rows;

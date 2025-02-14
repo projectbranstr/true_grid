@@ -34,7 +34,7 @@ function Articlebanner() {
     }, []);
 
     return (
-        <>
+        <div>
             <div className='js_article_main_container' ref={container}>
                 <div className="js_article_container">
                     <h4>Nuclear Energy Generation by Region</h4>
@@ -62,7 +62,7 @@ function Articlebanner() {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }
 

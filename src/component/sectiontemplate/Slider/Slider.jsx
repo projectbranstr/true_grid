@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 import Slider from 'react-slick';
-import "react-slick/"
 import Card from '../../molecule/Card/Card';
 import { popularBlogs } from '../../../data/api';
 const portfolioData = [
@@ -127,7 +126,10 @@ const portfolioData = [
     <Slider {...settings} className="cs-gap-12 cs-arrow_style4 ">
       {sliderData.data.map((item, index)=>{
         return (
-          <div key={index} className='js_card_bg_color'>
+          <div>
+
+         
+          <div key={index} className='js_card_bg_color slider_margin-right'>
           <div className='js_card_header'>
             <div className={`js_bg_img js_card_size ${varient && "js_card_height"}`} style={{ backgroundImage: `url(${item.img})` }}></div>
           </div>
@@ -140,6 +142,7 @@ const portfolioData = [
             <p className="js_card_content">{item.des}</p>
           </div>
         </div>
+         </div>
         )
       })}
     </Slider>

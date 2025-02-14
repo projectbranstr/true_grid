@@ -67,20 +67,29 @@ function Mainbanner() {
                                 TSLA
                             </button>
                             <button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/teslalogo.png" alt="" className="" />
-                                TSLA
+                                <img src="/img/msf1.png" alt="" className="" />
+                                MSFT
                             </button><button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/teslalogo.png" alt="" className="" />
-                                TSLA
+                                <img src="/img/nflx1.png" alt="" className="" />
+                                NFLX
                             </button><button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/teslalogo.png" alt="" className="" />
-                                TSLA
+                                <img src="/img/googl1.png" alt="" className="" />
+                                GOOGLE
+                            </button> <button className="jsx_companyname_container  banner_animate_btn">
+                                <img src="/img/msf1.png" alt="" className="" />
+                                MSFT
                             </button><button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/teslalogo.png" alt="" className="" />
-                                TSLA
+                                <img src="/img/nflx1.png" alt="" className="" />
+                                NFLX
                             </button><button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/teslalogo.png" alt="" className="" />
-                                TSLA
+                                <img src="/img/googl1.png" alt="" className="" />
+                                GOOGLE
+                            </button><button className="jsx_companyname_container  banner_animate_btn">
+                                <img src="/img/sbux1.png" alt="" className="" />
+                                SUBX
+                            </button><button className="jsx_companyname_container  banner_animate_btn">
+                                <img src="/img/msf1.png" alt="" className="" />
+                                MSFT
                             </button>
 
 

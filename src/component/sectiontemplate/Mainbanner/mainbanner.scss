@@ -20,6 +20,7 @@
 
 .jsx_banner_heading {
     font-size: clamp(4rem, 6.5vw, $primary-heading);
+    font-family: $primary-font-family;
     width: 70%;
     text-align: center;
 }
@@ -29,13 +30,13 @@
     align-items: center;
     padding: 0 1rem;
     width: 55%;
-    background-color: $background-glass-color-secondary;
+    background-color: #9f9ca58c;
     border-radius: 2px;
 }
 
 .jsx_banner_searchbar_container input {
     color: $font-color;
-    background-color: $background-glass-color-secondary;
+    background-color: transparent;
     border: none;
     padding: 1rem 1rem;
     width: 100%;
@@ -61,7 +62,7 @@
     font-size: 1.4rem;
     padding: 1rem 2rem;
     gap: 1rem;
-    background-color: $background-glass-color-secondary;
+    background-color: #9f9ca58c;
     border: none;
     border-radius: 2px;
     color: #fff;;
@@ -73,7 +74,7 @@
 }
 
 .jsx_companyname_maincontainer {
-    max-width: 50rem;
+    max-width: 80rem;
     display: flex;
     gap: 1rem;
     padding: 0rem 2rem;
@@ -109,4 +110,14 @@
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+@media  all and (max-width:600px) {
+    .jsx_banner_searchbar_container{
+        width:80%;
+    }
+    .jsx_companyname_container{
+        font-size: 1.2rem;
+        padding: 0.7rem 1.5rem;
+    }
 }

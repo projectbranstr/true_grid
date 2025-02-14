@@ -28,7 +28,7 @@ function FormPopup({onClick}) {
 
                 <input type='text' className="true_grid_form_field" placeholder='Company Name*' />
                 <input type='text' className="true_grid_form_field" placeholder='Title*' />
-                <button className='requested_btn js_join_now_btn'>Join Now</button>
+                <button className='requested_btn js_join_now_btn' type='button'>Join Now</button>
                 
             </div>
             {/* )} */}

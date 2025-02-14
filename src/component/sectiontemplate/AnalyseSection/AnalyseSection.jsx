@@ -416,31 +416,31 @@ const  AnalyseSection = () =>{
         return <div>{activeTabData ? activeTabData.content : 'No content available'}</div>;
     }
     const container = useRef();
- useEffect(() => {
-    // const line = SplitType.create('#h_1');
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container.current,
-            start: "top+=30 bottom",
-            end: "bottom",
-        },
-    });
-    tl.fromTo(
-        ".heading_animate",
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 },
-        "0")
-    .fromTo
-        (
-            ".js_analyse_tab_button",
-            { opacity: 0, y: 20 },
-            { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3").fromTo(".js_analyse_tab_select",
-            { opacity: 0, y: 20 },
-            { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3")
+//  useEffect(() => {
+//     // const line = SplitType.create('#h_1');
+//     const tl = gsap.timeline({
+//         scrollTrigger: {
+//             trigger: container.current,
+//             start: "top+=30 bottom",
+//             end: "bottom",
+//         },
+//     });
+//     tl.fromTo(
+//         ".heading_animate",
+//         { opacity: 0, y: 50 },
+//         { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 },
+//         "0")
+//     .fromTo
+//         (
+//             ".js_analyse_tab_button",
+//             { opacity: 0, y: 20 },
+//             { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3").fromTo(".js_analyse_tab_select",
+//             { opacity: 0, y: 20 },
+//             { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3")
 
-    return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+//     return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
 
-}, []);
+// }, []);
     return (
         <div className='js_analyse_main_container js_section_spacing'>
             <div className="js_main_container" ref={container}>

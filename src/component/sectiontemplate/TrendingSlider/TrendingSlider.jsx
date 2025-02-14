@@ -7,31 +7,7 @@ import Card from '../../molecule/Card/Card';
 import { popularBlogs } from '../../../data/api';
 
  const TrendingSlider =({slideCount=1 , showHover , varient=false , sliderData}) =>{
-  // const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-  //   <div
-  //     {...props}
-  //     className={
-  //       'slick-prev slick-arrow' + (currentSlide === 0 ? ' slick-disabled' : '')
-  //     }
-  //     aria-hidden="true"
-  //     aria-disabled={currentSlide === 0 ? true : false}
-  //   >
-  //     <Icon icon="bi:arrow-left" />
-  //   </div>
-  // );
-  // const SlickArrowRight = ({ currentSlide ,slideCount, ...props }) => (
-  //   <div
-  //     {...props}
-  //     className={
-  //       'slick-next slick-arrow' +
-  //       (currentSlide === slideCount - 1 ? ' slick-disabled' : '')
-  //     }
-  //     aria-hidden="true"
-  //     aria-disabled={currentSlide === slideCount - 1 ? true : false}
-  //   >
-  //     <Icon icon="bi:arrow-right" />
-  //   </div>
-  // );
+  
   const settings = {
     dots: false,
     infinite: true,
@@ -74,11 +50,12 @@ import { popularBlogs } from '../../../data/api';
   };
 
   return (
-    <div className='js_main_container js_section_spacing'>
+    <div className='js_main_container'>
       {sliderData?.title && <h1 className="js_section_secondary_heading">{sliderData.title}</h1>} 
     <Slider {...settings} className="cs-gap-12 cs-arrow_style4 ">
       {sliderData.data.map((item, index)=>{
         return (
+          <div className="js_trending_card_container">
           <div key={index} className='js_card_bg_color js_trending_card'>
           <div className='js_card_header'>
             <div className={`js_bg_img js_card_size ${varient && "js_card_height"}`} style={{ backgroundImage: `url(${item.img})` }}></div>
@@ -91,6 +68,7 @@ import { popularBlogs } from '../../../data/api';
               </div>
             <p className="js_card_content">{item.des}</p>
           </div>
+        </div>
         </div>
         )
       })}
