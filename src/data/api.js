@@ -2,14 +2,14 @@ export const popularBlogs = {
     title: "Popular Blogs",
     data: [
         {
-            img: "/blog1.png",
+            img: "/img/blog4.png",
             tag: "Technology",
             date: "2025-02-07",
             title: "Charted:Average Workers per U.S Startup (1994-2023)",
             des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
         },
         {
-            img: "/blog2.png",
+            img: "/img/blog5.png",
             tag: "Health",
             date: "2025-01-15",
             title: "Healthy Living Tips",
@@ -33,7 +33,7 @@ export const popularBlogs = {
 
         },
         {
-            img: "/tesla1.png",
+            img: "/blog2.png",
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
@@ -47,7 +47,7 @@ export const latestNews = {
     title: "Popular Blogs",
     data: [
         {
-            img: "/car1.png",
+            img: "/img/blog4.png",
             tag: "Technology",
             date: "2025-02-07",
             title: "Charted:Average Workers per U.S Startup (1994-2023)",
@@ -81,7 +81,7 @@ export const latestNews = {
             des: "A guide to the top travel destinations for 2025.",
         },
         {
-            img: "/tesla4.png",
+            img: "/img/blog5.png",
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
@@ -90,7 +90,7 @@ export const latestNews = {
     ],
     data2: [
         {
-            img: "/blog1.png",
+            img: "/img/blog5.png",
             tag: "Technology",
             date: "2025-02-07",
             title: "Charted:Average Workers per U.S Startup (1994-2023)",
@@ -158,18 +158,18 @@ export const discoverMore = {
     title: "Discover More",
     data: [
         {
-            img: "/chart1.png",
+            img: "/img/blog6.png",
             title: "Ford Motors",
             des: "Ford Motor Co. engages in the manufacture, distribution, and sale of automobiles.",
         },
         {
-            img: "/chart1.png",
+           img: "/img/blog6.png",
 
             title: "Ford Motors",
             des: "Ford Motor Co. engages in the manufacture, distribution, and sale of automobiles.",
         },
         {
-            img: "/chart1.png",
+           img: "/img/blog6.png",
 
             title: "Ford Motors",
             des: "Ford Motor Co. engages in the manufacture, distribution, and sale of automobiles.",
@@ -234,12 +234,41 @@ export const companies = [
         }, 
        
     ]}
-
+    export const trendingStoryCard = {
+        title: "Trending Statistics",
+        data: [
+            {
+                img: "/img/blog5.png",
+                tag: "Technology",
+                date: "2025-02-07",
+                title: "Charted:Average Workers per U.S Startup (1994-2023)",
+                des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trendsStartups are famous for starting small, but they’re starting.",
+            },
+            {
+                img: "/img/story2.png",
+    
+                tag: "Health",
+                date: "2025-01-15",
+                title: "Healthy Living Tips",
+                           des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+    
+            },
+            {
+                img: "/img/story3.png",
+    
+                tag: "Travel",
+                date: "2024-12-20",
+                title: "Top Travel Destinations",
+                           des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+    
+            }, 
+           
+        ]}
     export const mobileArticle = {
         title: "Articles",
         data: [
             {
-                img: "/img/article12.png",
+                img: "/img/story1.png",
                 tag: "Technology",
                 date: "2025-02-07",
                 title: "Charted:Average Workers per U.S Startup (1994-2023)",

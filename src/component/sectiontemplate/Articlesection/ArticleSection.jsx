@@ -139,6 +139,28 @@ function ArticleSection() {
                                 <div>Charted: The Surge of Vaping in America’s Young Adults</div>
                             </div>
                         </div>
+                        <div className='js_article_container_cards js_blogs_article_animation'>
+                            <img src='/tesla2.png' alt='article_img' />
+                            <div className='js_article_title'>
+                                <div>TSLA / 12 hours ago</div>
+                                <div>Charted: The Surge of Vaping in America’s Young Adults</div>
+                            </div>
+                        </div>
+                        <div className='js_article_container_cards js_blogs_article_animation'>
+                            <img src='/tesla3.png' alt='article_img' />
+                            <div className='js_article_title'>
+                                <div>TSLA / 12 hours ago</div>
+                                <div>Charted: The Surge of Vaping in America’s Young Adults</div>
+                            </div>
+                        </div>
+                        <div className='js_article_container_cards js_blogs_article_animation'>
+                            <img src='/tesla4.png' alt='article_img' />
+                            <div className='js_article_title'>
+                                <div>TSLA / 12 hours ago</div>
+                                <div>Charted: The Surge of Vaping in America’s Young Adults</div>
+                            </div>
+                        </div>
+                        
                     </div>
 
 
@@ -177,7 +199,7 @@ function ArticleSection() {
                         </div>
 
                     </div>
-                    <div className="js_articledata_right_container">
+                    <div className="js_articledata_right_container slider_show_in_desktop">
                         <div className="">Nuclear Energy Generation by Region (2023)</div>
                         <div className="">Nuclear in the Energy Mix</div>
                     </div>

@@ -28,7 +28,7 @@ function Testimonial() {
             <div className="jsx_primary_container">
                 <div className="jsx_testimonial-container">
                     <div className="jsx_test_img_container">
-                        <img src="/img/avatar.png" alt="Tetimonial_img" className="" />
+                        <img src="/img/slideravtar.png" alt="Tetimonial_img" className="" />
                     </div>
                     <div className="jsx_author_container">
                         Howard Marks

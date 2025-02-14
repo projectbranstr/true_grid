@@ -6,6 +6,9 @@
 }
 .js_header_bg{
     background-color: #091A2E;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .js_header_container {
     display: flex;

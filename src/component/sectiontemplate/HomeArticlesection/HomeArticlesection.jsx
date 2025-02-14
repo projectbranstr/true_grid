@@ -8,7 +8,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const item = {
-    img: "/img/article12.png",
+    img: "/img/article13.png",
     tag: "Technology",
     date: "2025-02-07",
     title: "Charted:Average Workers per U.S Startup (1994-2023)",

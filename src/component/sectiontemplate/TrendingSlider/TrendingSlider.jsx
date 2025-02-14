@@ -6,10 +6,11 @@ import "./trending.scss"
 import Card from '../../molecule/Card/Card';
 import { popularBlogs } from '../../../data/api';
 
- const TrendingSlider =({slideCount=1 , showHover , varient=false , sliderData}) =>{
+ const TrendingSlider =({slideCount=3 , showHover , varient=false , sliderData}) =>{
   
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: slideCount || 3,
@@ -27,7 +28,7 @@ import { popularBlogs } from '../../../data/api';
 
           slidesToShow: 0,
           slidesToScroll: 0,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -52,13 +53,14 @@ import { popularBlogs } from '../../../data/api';
   return (
     <div className='js_main_container'>
       {sliderData?.title && <h1 className="js_section_secondary_heading">{sliderData.title}</h1>} 
+      <div className="js_trending_slider_width">
     <Slider {...settings} className="cs-gap-12 cs-arrow_style4 ">
       {sliderData.data.map((item, index)=>{
         return (
           <div className="js_trending_card_container">
           <div key={index} className='js_card_bg_color js_trending_card'>
           <div className='js_card_header'>
-            <div className={`js_bg_img js_card_size ${varient && "js_card_height"}`} style={{ backgroundImage: `url(${item.img})` }}></div>
+            <div className={`js_bg_img js_card_size_trending ${varient && "js_card_height"}`} style={{ backgroundImage: `url(${item.img})` }}></div>
           </div>
           <div className="js_card_body">
             <div className="js_card_tag"><b>{item.tag}</b>&nbsp; / &nbsp;{item.date}</div>
@@ -72,7 +74,7 @@ import { popularBlogs } from '../../../data/api';
         </div>
         )
       })}
-    </Slider>
+    </Slider></div>
       </div>
   );
 }

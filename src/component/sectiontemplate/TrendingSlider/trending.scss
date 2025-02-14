@@ -1,9 +1,13 @@
 .js_trending_card{
-max-width: 50rem;
+max-width: 40rem;
 margin: 0 auto;
 }
 .js_trending_card_container{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.js_trending_slider_width{
+    // width:0rem;
+    // margin:  0 auto;
 }

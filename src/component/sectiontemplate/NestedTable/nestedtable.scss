@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"); 
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
-
+@use "./../../theVariable.scss" as *;
 $nt-b-color: #337ab7;
 $nt-b-style: dashed;
 
@@ -16,6 +14,7 @@ table {
   color: #fff;
   text-align: left;
   font-size:1.6rem;
+  font-family: $tertiary-font-family;
   width: 100%;
   margin-bottom: 0 !important;
   

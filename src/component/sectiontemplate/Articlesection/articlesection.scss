@@ -47,6 +47,7 @@
 .js_sidebar_heading {
     display: flex;
     font-size: 2rem;
+    font-family: $tertiary-font-family;
     border-bottom: 2px solid white;
     gap: 2rem;
     padding: 1rem 0rem;
@@ -64,7 +65,7 @@
     background-color: #87B6F124;
     height: 8rem;
     border-radius: 2px;
-
+    margin-bottom: 2rem;
 }
 
 .js_article_container_cards img {
@@ -86,10 +87,12 @@
 
 .js_article_title :nth-child(1) {
     font-size: $card-date-font-size;
+    font-family: $tertiary-font-family;
 }
 
 .js_article_title :nth-child(2) {
     font-size: 1.4rem;
+    font-family: $tertiary-font-family;
 }
 
 
@@ -138,11 +141,13 @@
 
 .js_accordian_title h6 {
     font-size:clamp(2rem, 3vw, $tertiary-heading) ;
+    font-size: $tertiary-font-family;
     padding: 1rem 0;
 }
 
 .js_accordian_title div {
     font-size: 20px;
+    font-family: $tertiary-font-family;
     border: 1px solid white;
     height: 2rem;
     width: 2rem;
@@ -156,6 +161,7 @@
 
 .js_accordian_subtitle p {
     font-size: $card-heading-font-size;
+    font-family: $tertiary-font-family;
     padding-bottom: 1rem;
 }
 
@@ -193,9 +199,12 @@
     padding-top: 3rem;
 
     font-size: 23px;
+    font-family: $tertiary-font-family;
     font-weight: 600;
 }
 
 .js_articledata_right_container div:nth-child(2) {
     font-size: 23px;
+    font-family: $tertiary-font-family;
+
 }

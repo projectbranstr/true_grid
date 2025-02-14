@@ -1,8 +1,8 @@
 //starter 
 
-
 .jsx_starter_container {
     position: relative;
+    background-image: linear-gradient(0deg, #020D1B, transparent);
 }
 
 
@@ -14,20 +14,26 @@
     width: 100%;
     // height: 100%;
     display: flex;
-    background-color: #020D1B;
+    // background-color: #020D1B;
+
+}
+.js_logo_loader{
 
 }
 
-
 .js_loader_main_container {
-    background-color: #020D1B;
+    // background-color: #020D1B;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     height: 100vh;
+    padding-bottom: 10rem;
 }
 
 .js_logo_loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 200px;
 
 }
@@ -137,4 +143,26 @@ rect:nth-child(9) {
     border-radius: 1rem;
     background-color: transparent;
     margin-top: 2rem;
+}
+
+// video
+
+.js_formpop_container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.jsx-background-video-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: -1;
 }

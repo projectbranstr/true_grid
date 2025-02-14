@@ -11,7 +11,7 @@ function Footer() {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: container.current,
-            start: "top+=30 bottom",
+            start: "top+=130 bottom",
             end: "bottom",
             
           },
