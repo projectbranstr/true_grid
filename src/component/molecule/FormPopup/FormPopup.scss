@@ -2,15 +2,17 @@
 
 .true_grid_pop_form {
 
-    background-color: #161D27;
+    background-color: #04173080;
    border-radius: 1rem;
   width: 68rem;
    margin:  0 auto;
+   height: 63rem;
+   align-self: center;
 }
 
 .true_grid_form_layout {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     flex-direction: column;
     justify-content: center;
     padding: 4.5rem 4rem;
@@ -23,7 +25,7 @@
     }
 }
 
-.true_grid_form_field {
+.true_grid_form_field{
     color: #fff;
     padding: 1.5rem 0;
     font-size: 1.6rem;
@@ -44,7 +46,9 @@
         color: $font-color;
     }
 }
-
+input::placeholder{
+    color:#fff;
+}
 .js_join_now_btn {
     margin-top: 3rem;
 }

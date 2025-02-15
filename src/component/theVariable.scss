@@ -1,7 +1,7 @@
 
 $primary-heading: 7.4rem; // 74px
 $secondary-heading: 4.5rem; // 45px
-$tertiary-heading: 3rem; // 30px
+$tertiary-heading: 2.8rem; // 30px
 $background-glass-color-primary: #1d2d41;
 $background-glass-color-secondary: #9f9ca5;
 $primary-font-family: 'Monstreat', sans-serif;
@@ -27,6 +27,9 @@ $secondary-color: #2495E0;
 //     font-size: 20px;
 //     display: table !important;
 //   }
+.js_background_glass_effect{
+  background: linear-gradient(0deg, #525a65c2, #6E7682);
+}
 .slick-dots li{
     border : 3px solid $secondary-color;
     border-radius: 1rem;
@@ -56,7 +59,7 @@ $secondary-color: #2495E0;
     
     font-size: $para-graph-font-size;
     font-family: $tertiary-font-family;
-    padding: 1rem 0;
+    padding-bottom: 1rem;
     line-height: 2.4rem;
     color: $paragraph-color;
     // margin-bottom: 2rem;

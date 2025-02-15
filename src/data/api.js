@@ -441,3 +441,70 @@ export const companies = [
                 sentDate: '01/01/2019',
                 parentId: 5
             }];
+
+
+        export const sankeyChartData = {
+            chart: {
+              backgroundColor: '#1d2d41', // Set the background color of the entire chart
+            },
+            title: {
+              text: 'TESLA Q3 Sankey Diagram'
+            },
+            accessibility: {
+              point: {
+                valueDescriptionFormat: '{index}. {point.from} to {point.to}, {point.weight}.'
+              }
+            },
+            series: [{
+              keys: ['from', 'to', 'weight', 'color'],
+              data: [
+                ['Automotive', 'Revenue', 87.60],
+                ['Energy', 'Revenue', 10.6],
+                ['Revenue', 'Gross Profit', 17.45],
+                ['Revenue', 'Cost of Sales', 80.24],
+                ['Gross Profit', 'Earnings', 7.13],
+                ['Gross Profit', 'Expenses', 10.32, '#FF8C00'],
+                ['Expenses', 'General Admin', 5.5],
+                ['Expenses', 'Research & Dev', 4.5],
+                ['Expenses', 'Others', 0.12]
+              ],
+              type: 'sankey',
+              nodeWidth: 30,
+              nodePadding: 250,
+              tooltip: {
+                pointFormat: '<b style="font-size: 14px">Company - Tesla<b></b></br><b>Profit - $34.34b <b> </br>Total expensive - $34.5b <b>'
+              },
+              name: 'TESLA Sankey',
+              nodes: [{
+                id: 'Automotive',
+                color: '#1E90FF'
+              }, {
+                id: 'Energy',
+                color: '#1E90FF'
+              }, {
+                id: 'Revenue',
+                color: '#FFD700'
+              }, {
+                id: 'Gross Profit',
+                color: '#32CD32'
+              }, {
+                id: 'Earnings',
+                color: '#32CD32'
+              }, {
+                id: 'Cost of Sales',
+                color: '#E5B061'
+              }, {
+                id: 'Expenses',
+                color: '#FF8C00'
+              }, {
+                id: 'General Admin',
+                color: '#F4A300'
+              }, {
+                id: 'Research & Dev',
+                color: '#4682B4'
+              }, {
+                id: "Others",
+                color: '#8A2BE2'
+              }]
+            }]
+          } 

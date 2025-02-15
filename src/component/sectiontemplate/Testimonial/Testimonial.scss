@@ -34,3 +34,8 @@
     text-align: center;
     padding: 0rem 5rem;
 }
+@media  all and (max-width:600px) {
+    .jsx_quote_container sup img{
+        width: 14px;
+    }
+}

@@ -7,6 +7,7 @@ import AnalyseSection from '../component/sectiontemplate/AnalyseSection/AnalyseS
 import Header from '../component/molecule/Header/Header'
 import Footer from '../component/molecule/Footer/Footer'
 import CompanyBanner from '../component/sectiontemplate/CompanyBanner/CompanyBanner'
+import SankeyDiagram from '../component/molecule/SankeyDiagram/SankeyDiagram';
 
 // import NestedTable from '../component/sectiontemplate/NestedTable/NestedTable'
 function Company() {

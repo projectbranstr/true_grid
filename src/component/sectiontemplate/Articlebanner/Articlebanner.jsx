@@ -43,7 +43,7 @@ function Articlebanner() {
 
                 <div className="js_banner_second">
                     <div className="js_banner_secondinner_container">
-                        <button className="js_banner_second_compnaycontainer social_icon_animation" >
+                        <button className="js_banner_second_compnaycontainer social_icon_animation js_background_glass_effect" >
                             <img src='/img/teslalogo.png' alt='teslalogo' className='article_img_animation' />
                             <div className='js_banner_second_companyname'>
                                 <h6 className='article_img_animation'>Tesla, Inc. (TSLA)</h6>
@@ -51,12 +51,12 @@ function Articlebanner() {
                             </div>
                         </button>
                         <div className="js_socialicon_container">
-                            <button className='social_icon_animation'><img src='/img/linkin.png' alt='social_icon' /></button>
-                            <button className='social_icon_animation'><img src='/img/pintrest.png' alt='social_icon' /></button>
-                            <button className='social_icon_animation'><img src='/img/twiter.png' alt='social_icon' /></button>
-                            <button className='social_icon_animation'><img src='/img/facebook.png' alt='social_icon' /></button>
-                            <button className='social_icon_animation'><img src='/img/reddit.png' alt='social_icon' /></button>
-                            <button className='social_icon_animation'><img src='/img/mail.png' alt='social_icon' /></button>
+                            <button className='js_background_glass_effect  social_icon_animation'><img src='/img/linkin.png' alt='social_icon' /></button>
+                            <button className='js_background_glass_effect social_icon_animation'><img src='/img/pintrest.png' alt='social_icon' /></button>
+                            <button className='js_background_glass_effect social_icon_animation'><img src='/img/twiter.png' alt='social_icon' /></button>
+                            <button className='js_background_glass_effect social_icon_animation'><img src='/img/facebook.png' alt='social_icon' /></button>
+                            <button className='js_background_glass_effect social_icon_animation'><img src='/img/reddit.png' alt='social_icon' /></button>
+                            <button className='js_background_glass_effect social_icon_animation'><img src='/img/mail.png' alt='social_icon' /></button>
                         </div>
                     </div>
                 </div>

@@ -62,7 +62,7 @@ useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: container.current,
-        start: "top+=30 bottom",
+        start: "top+=150 bottom",
         end: "bottom",
       },
     });
@@ -86,12 +86,12 @@ useEffect(() => {
                  <PrimaryHeading title="Articles" /></span>
                 <div className='js_home_article_container'>
                     <div className="js_card_bg_color article_card_1">
-                <div className=""><Card1 index={1} cardContent={item} varient/></div>
+                <div className=""><Card1 index={1} cardContent={item} varient fontSize/></div>
                     <div className="js_home_article1_container">
                         {item1.map((item, index)=>{
                         return (
                             <div className='article_card_1'>
-                            <Card1 cardContent={item}  index={index}/>
+                            <Card1 cardContent={item}  index={index} fontSize/>
                             </div>
                         )
                        })}
@@ -101,7 +101,7 @@ useEffect(() => {
                        {recentlyArticle.map((item, index)=>{
                         return (
                             <div className='article_card_2'>
-                            <Card1 cardContent={item}  index={index}/>
+                            <Card1 cardContent={item}  index={index} />
                             </div>
                         )
                        })}

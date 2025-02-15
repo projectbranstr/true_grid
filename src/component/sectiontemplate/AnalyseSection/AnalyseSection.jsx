@@ -5,9 +5,12 @@ import StockChart from '../StockChart/StockChart';
 import NestedTable from '../NestedTable/NestedTable';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { sankeyChartData } from '../../../data/api';
 gsap.registerPlugin(ScrollTrigger);
 const  AnalyseSection = () =>{
     // Data for tabs and their content
+
+    const [showSankeyChart , setShowSankeyChart] = useState(true);
     const data1 =  [
         {
           "name": "Gross Profit",
@@ -383,9 +386,9 @@ const  AnalyseSection = () =>{
       ]
     const data = {
         tabs: [
-            { id: '1', label: 'Revenue & Expenses Breakdown', content: <SankeyDiagram />},
-            { id: 'Tab 2', label: 'Financial Statement', content: <NestedTable data={data1}/> },
-            { id: 'Tab 3', label: 'Fundamental Analysis', content: <StockChart /> },
+            { id: '1', label: 'Revenue & Expenses Breakdown', content: ""},
+            { id: '2', label: 'Financial Statement', content: <NestedTable data={data1}/> },
+            { id: '3', label: 'Fundamental Analysis', content: <StockChart /> },
         ],
         qtyOptions: ['10', '20', '30'],
         dateOptions: ['2025-02-08', '2025-02-09', '2025-02-10']
@@ -413,34 +416,34 @@ const  AnalyseSection = () =>{
     // Get content for the active tab
     const renderTabContent = () => {
         const activeTabData = data.tabs.find(tab => tab.id === activeTab);
-        return <div>{activeTabData ? activeTabData.content : 'No content available'}</div>;
+        return <div>{activeTabData ? (activeTabData.content) : 'No content available'}</div>;
     }
     const container = useRef();
-//  useEffect(() => {
-//     // const line = SplitType.create('#h_1');
-//     const tl = gsap.timeline({
-//         scrollTrigger: {
-//             trigger: container.current,
-//             start: "top+=30 bottom",
-//             end: "bottom",
-//         },
-//     });
-//     tl.fromTo(
-//         ".heading_animate",
-//         { opacity: 0, y: 50 },
-//         { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 },
-//         "0")
-//     .fromTo
-//         (
-//             ".js_analyse_tab_button",
-//             { opacity: 0, y: 20 },
-//             { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3").fromTo(".js_analyse_tab_select",
-//             { opacity: 0, y: 20 },
-//             { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3")
+ useEffect(() => {
+    // const line = SplitType.create('#h_1');
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: container.current,
+            start: "top+=30 bottom",
+            end: "bottom",
+        },
+    });
+    tl.fromTo(
+        ".heading_animate",
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 },
+        "0")
+    .fromTo
+        (
+            ".js_analyse_tab_button",
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3").fromTo(".js_analyse_tab_select",
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.8, stagger: 0.2}, "0.3")
 
-//     return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
 
-// }, []);
+}, []);
     return (
         <div className='js_analyse_main_container js_section_spacing'>
             <div className="js_main_container" ref={container}>
@@ -487,8 +490,9 @@ const  AnalyseSection = () =>{
                             </select>
                         </div>
                     </div>
-
                     <div className="js_analyse_tab_content">
+
+                      {activeTab == "1" && <SankeyDiagram sankeyData={sankeyChartData} /> }
                         {renderTabContent()}
                     </div>
                 </div>

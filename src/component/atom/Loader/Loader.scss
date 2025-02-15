@@ -3,6 +3,7 @@
 .jsx_starter_container {
     position: relative;
     background-image: linear-gradient(0deg, #020D1B, transparent);
+    
 }
 
 
@@ -14,8 +15,8 @@
     width: 100%;
     // height: 100%;
     display: flex;
-    // background-color: #020D1B;
-
+    background-color: #020d1b7a;
+ height: 100%;
 }
 .js_logo_loader{
 
@@ -27,7 +28,9 @@
     align-items: end;
     justify-content: center;
     height: 100vh;
-    padding-bottom: 10rem;
+    &.bg_blur_effect{
+        filter: blur(3px);
+    }
 }
 
 .js_logo_loader {
@@ -35,7 +38,7 @@
     flex-direction: column;
     justify-content: center;
     width: 200px;
-
+  align-self: center;
 }
 
 .js_logo_loader {

@@ -1,11 +1,23 @@
 import React from 'react'
 import './loader2.scss'
 
+
 function Loader2() {
     return (
         <>
+<div className="js_formpop_container2">
+<video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="jsx-background-video-form2"
+        >
+          <source src="/img/bannerbg.mp4" type="video/mp4" />
+        </video>
 
-            <div className="js_loader2_container">
+     <div className="js_loader2_container">
+
                 <svg id="Layer_2" class='js_svg_animaton' data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 627.13 941.19">
 
                     <g id="Layer_1-2" data-name="Layer 1">
@@ -30,6 +42,8 @@ function Loader2() {
                     </g>
                 </svg>
             </div>
+</div>
+           
         </>
     )
 }

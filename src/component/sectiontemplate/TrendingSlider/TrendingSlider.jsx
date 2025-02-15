@@ -1,13 +1,15 @@
 "use client"
-import React from 'react';
+import React, { useRef , useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import "react-slick/"
 import "./trending.scss"
 import Card from '../../molecule/Card/Card';
 import { popularBlogs } from '../../../data/api';
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
  const TrendingSlider =({slideCount=3 , showHover , varient=false , sliderData}) =>{
-  
+  const container = useRef();
   const settings = {
     dots: false,
     arrows: false,
@@ -49,10 +51,32 @@ import { popularBlogs } from '../../../data/api';
       },
     ],
   };
-
+ useEffect(() => {
+        // const line = SplitType.create('#h_1');
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: container.current,
+                start: "top+=130 bottom",
+                end: "bottom",
+            },
+        });
+        tl.fromTo(
+            container.current,
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, duration: 0.6,},
+            "0")
+        .fromTo
+            (
+                ".js_trending_heading_animation",
+                { opacity: 0, y:40 },
+                { opacity: 1, y: 0, duration: 0.8} ,"0")
+    
+        return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    
+    }, []);
   return (
-    <div className='js_main_container'>
-      {sliderData?.title && <h1 className="js_section_secondary_heading">{sliderData.title}</h1>} 
+    <div className='js_main_container' ref={container}>
+      {sliderData?.title && <h1 className="js_section_secondary_heading js_trending_heading_animation">{sliderData.title}</h1>} 
       <div className="js_trending_slider_width">
     <Slider {...settings} className="cs-gap-12 cs-arrow_style4 ">
       {sliderData.data.map((item, index)=>{

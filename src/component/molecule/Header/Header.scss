@@ -5,7 +5,8 @@
     margin: 0 auto;
 }
 .js_header_bg{
-    background-color: #091A2E;
+    background-color: #091a2eeb;
+    backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
     z-index: 1;
