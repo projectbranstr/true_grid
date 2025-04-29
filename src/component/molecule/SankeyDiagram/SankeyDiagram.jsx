@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
 
 const SankeyDiagram = ({ sankeyData }) => {
   const containerRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!sankeyData) {
       console.error("Sankey data is missing!");
       return;
@@ -39,7 +39,7 @@ const SankeyDiagram = ({ sankeyData }) => {
       const scripts = document.querySelectorAll('script[src^="https://code.highcharts.com"]');
       scripts.forEach(script => document.body.removeChild(script));
     };
-  }, [sankeyData]);
+  }, []);
 
   return <div ref={containerRef} style={{ margin: "7rem 0rem 5rem 0rem" }} />;
 };

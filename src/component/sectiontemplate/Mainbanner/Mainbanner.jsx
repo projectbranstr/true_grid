@@ -52,8 +52,8 @@ function Mainbanner() {
                 <div className="jsx_banner_primary_container" ref={container}>
                     <div className="jsx_bannermain_container">
                         <div className="jsx_banner_heading banner_animation">
-                            Authenticity in every Chart
-                            Integrity in every Number
+                            Authenticity in every <b>Chart </b>
+                            Integrity in every <b>Number</b>
                         </div>
                         <div className="jsx_banner_searchbar_container banner_animation">
                             <input type="text" placeholder='Search...' />
@@ -62,34 +62,19 @@ function Mainbanner() {
                         <div className="jsx_companyname_maincontainer">
 
 
-                            <button className="jsx_companyname_container banner_animate_btn">
+                            <button className="jsx_companyname_container banner_animate_btn js_background_glass_effect">
                                 <img src="/img/teslalogo.png" alt="" className="" />
                                 TSLA
                             </button>
-                            <button className="jsx_companyname_container  banner_animate_btn">
+                            <button className="jsx_companyname_container  banner_animate_btn js_background_glass_effect">
                                 <img src="/img/msf1.png" alt="" className="" />
                                 MSFT
-                            </button><button className="jsx_companyname_container  banner_animate_btn">
+                            </button><button className="jsx_companyname_container  banner_animate_btn js_background_glass_effect">
                                 <img src="/img/nflx1.png" alt="" className="" />
                                 NFLX
-                            </button><button className="jsx_companyname_container  banner_animate_btn">
+                            </button><button className="jsx_companyname_container  banner_animate_btn js_background_glass_effect">
                                 <img src="/img/googl1.png" alt="" className="" />
                                 GOOGLE
-                            </button> <button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/msf1.png" alt="" className="" />
-                                MSFT
-                            </button><button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/nflx1.png" alt="" className="" />
-                                NFLX
-                            </button><button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/googl1.png" alt="" className="" />
-                                GOOGLE
-                            </button><button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/sbux1.png" alt="" className="" />
-                                SUBX
-                            </button><button className="jsx_companyname_container  banner_animate_btn">
-                                <img src="/img/msf1.png" alt="" className="" />
-                                MSFT
                             </button>
 
 

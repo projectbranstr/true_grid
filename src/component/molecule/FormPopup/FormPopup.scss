@@ -2,9 +2,9 @@
 
 .true_grid_pop_form {
 
-    background-color: #04173080;
+  background-color: #04173080;
    border-radius: 1rem;
-  width: 68rem;
+   width: 71rem;
    margin:  0 auto;
    height: 63rem;
    align-self: center;
@@ -20,6 +20,7 @@
 
     & .form_heading {
         font-size: 2.8rem;
+        font-family: $primary-font-family;
         text-align: center;
         font-weight: 600;
     }

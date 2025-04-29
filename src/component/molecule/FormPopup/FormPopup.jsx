@@ -6,7 +6,7 @@ function FormPopup({onClick}) {
 
 
     return (
-        <form className='true_grid_pop_form' onClick={onClick}>
+        <form className='true_grid_pop_form ' onClick={onClick}>
 
             {/* {isOpen && ( */}
             <div className="true_grid_form_layout">

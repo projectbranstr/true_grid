@@ -126,8 +126,8 @@ const portfolioData = [
     <Slider {...settings} className="cs-gap-12 cs-arrow_style4 ">
       {sliderData.data.map((item, index)=>{
         return (
-          <div>
-          <div key={index} className='js_card_bg_color slider_margin-right'>
+          <div key={index} >
+          <div className='js_card_bg_color slider_margin-right'>
           <div className='js_card_header'>
             <div className={`js_bg_img js_card_size ${varient && "js_card_height"}`} style={{ backgroundImage: `url(${item.img})` }}></div>
           </div>

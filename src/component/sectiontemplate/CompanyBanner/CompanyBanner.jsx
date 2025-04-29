@@ -35,7 +35,7 @@ const CompanyBanner = () => {
     return (
         <div className="js_company_banner_img1">
             <div className="js_main_container " ref={container}>
-                <div className="js_banner_company_container social_icon_animation" >
+                <div className="js_banner_company_container social_icon_animation js_background_glass_effect" >
                     <div className="js_banner_main_containe">
                          <div className="js_company_banner_content">
                         <img src='/img/teslacompanny.png' alt='teslalogo' className='js_company_banner_img' />

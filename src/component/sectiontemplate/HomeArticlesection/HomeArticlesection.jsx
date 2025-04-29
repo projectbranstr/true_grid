@@ -8,7 +8,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const item = {
-    img: "/img/article13.png",
+    img: "/img/Article1.png",
     tag: "Technology",
     date: "2025-02-07",
     title: "Charted:Average Workers per U.S Startup (1994-2023)",
@@ -41,14 +41,14 @@ const item1 = [{
 }]
 const recentlyArticle = [
     {
-        img: "/img/story1.png",
+        img: "/img/Article2.png",
         tag: "Technology",
         date: "2025-02-07",
         title: "Charted:Average Workers per U.S Startup (1994-2023)",
         des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.Startups are famous for starting small."
     },
     {
-        img: "/tesla1.png",
+        img: "/img/Article3.png",
         tag: "Technology",
         date: "2025-02-07",
         title: "Charted:Average Workers per U.S Startup (1994-2023)",

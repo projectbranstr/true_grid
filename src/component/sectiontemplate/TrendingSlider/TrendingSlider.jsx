@@ -81,7 +81,7 @@ gsap.registerPlugin(ScrollTrigger);
     <Slider {...settings} className="cs-gap-12 cs-arrow_style4 ">
       {sliderData.data.map((item, index)=>{
         return (
-          <div className="js_trending_card_container">
+          <div className="js_trending_card_container" key={index}>
           <div key={index} className='js_card_bg_color js_trending_card'>
           <div className='js_card_header'>
             <div className={`js_bg_img js_card_size_trending ${varient && "js_card_height"}`} style={{ backgroundImage: `url(${item.img})` }}></div>

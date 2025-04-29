@@ -1,6 +1,6 @@
 import React , {useEffect, useRef} from 'react'
 import Card from '../component/molecule/Card/Card';
-import { companyOverview, popularBlogs, discoverMore } from '../data/api'
+import { companyOverview, popularBlogs, discoverMore, latestCompanyblogs } from '../data/api'
 import CompanyOverview from '../component/sectiontemplate/Mainbanner/CompanyOverview/CompanyOverview'
 import DiscoverCard from '../component/molecule/DiscoverCard/DiscoverCard'
 import AnalyseSection from '../component/sectiontemplate/AnalyseSection/AnalyseSection'
@@ -21,7 +21,7 @@ function Company() {
     
             <DiscoverCard data={discoverMore} />
             <CompanyOverview data={companyOverview} />
-            <Card data={popularBlogs} />
+            <Card data={latestCompanyblogs} />
             <Footer/>
         </div>
     )

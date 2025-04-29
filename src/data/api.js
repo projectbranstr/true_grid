@@ -2,14 +2,14 @@ export const popularBlogs = {
     title: "Popular Blogs",
     data: [
         {
-            img: "/img/blog4.png",
+            img: "/img/blog7.png",
             tag: "Technology",
             date: "2025-02-07",
             title: "Charted:Average Workers per U.S Startup (1994-2023)",
             des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
         },
         {
-            img: "/img/blog5.png",
+            img: "/img/blog8.png",
             tag: "Health",
             date: "2025-01-15",
             title: "Healthy Living Tips",
@@ -17,23 +17,7 @@ export const popularBlogs = {
 
         },
         {
-            img: "/tesla2.png",
-            tag: "Travel",
-            date: "2024-12-20",
-            title: "Top Travel Destinations",
-            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
-
-        }, 
-        {
-            img: "/tesla4.png",
-            tag: "Health",
-            date: "2025-01-15",
-            title: "Healthy Living Tips",
-            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
-
-        },
-        {
-            img: "/blog2.png",
+            img: "/img/blog9.png",
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
@@ -42,7 +26,94 @@ export const popularBlogs = {
         }
     ]
 }
+export const articleOtherblogs = {
+    title: "Other blogs",
+    data: [
+        {
+            img: "/img/otherblogs1.png",
+            tag: "Technology",
+            date: "2025-02-07",
+            title: "Charted:Average Workers per U.S Startup (1994-2023)",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+        },
+        {
+            img: "/img/otherblogs2.png",
+            tag: "Health",
+            date: "2025-01-15",
+            title: "Healthy Living Tips",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
 
+        },
+        {
+            img: "/img/otherblogs3.png",
+            tag: "Travel",
+            date: "2024-12-20",
+            title: "Top Travel Destinations",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
+        }, 
+        {
+            img: "/img/otherblogs4.png",
+            tag: "Health",
+            date: "2025-01-15",
+            title: "Healthy Living Tips",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
+        },
+        {
+            img: "/img/otherblogs5.png",
+            tag: "Travel",
+            date: "2024-12-20",
+            title: "Top Travel Destinations",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
+        }
+    ]
+}
+export const latestCompanyblogs = {
+    title: "Latest blogs",
+    data: [
+        {
+            img: "/img/blog7.png",
+            tag: "Technology",
+            date: "2025-02-07",
+            title: "Charted:Average Workers per U.S Startup (1994-2023)",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+        },
+        {
+            img: "/img/otherblogs5.png",
+            tag: "Health",
+            date: "2025-01-15",
+            title: "Healthy Living Tips",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
+        }, 
+        {
+            img: "/img/blog9.png",
+            tag: "Travel",
+            date: "2024-12-20",
+            title: "Top Travel Destinations",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
+        }, 
+       {
+            img: "/img/blog8.png",
+            tag: "Health",
+            date: "2025-01-15",
+            title: "Healthy Living Tips",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
+        },
+        {
+            img: "/img/Story6.png",
+            tag: "Travel",
+            date: "2024-12-20",
+            title: "Top Travel Destinations",
+            des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
+
+        }
+    ]
+}
 export const latestNews = {
     title: "Popular Blogs",
     data: [
@@ -208,15 +279,14 @@ export const companies = [
     title: "Top Story",
     data: [
         {
-            img: "/img/story1.png",
+            img: "/img/Story4.png",
             tag: "Technology",
             date: "2025-02-07",
             title: "Charted:Average Workers per U.S Startup (1994-2023)",
             des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trends.",
         },
         {
-            img: "/img/story2.png",
-
+            img: "/img/Story5.png",
             tag: "Health",
             date: "2025-01-15",
             title: "Healthy Living Tips",
@@ -224,8 +294,7 @@ export const companies = [
 
         },
         {
-            img: "/img/story3.png",
-
+            img: "/img/Story6.png",
             tag: "Travel",
             date: "2024-12-20",
             title: "Top Travel Destinations",
@@ -245,7 +314,7 @@ export const companies = [
                 des: "Startups are famous for starting small, but they’re starting even smaller compared to the 1990s. We look at the trendsStartups are famous for starting small, but they’re starting.",
             },
             {
-                img: "/img/story2.png",
+                img: "/img/trendslider1.png",
     
                 tag: "Health",
                 date: "2025-01-15",
